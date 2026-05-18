@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BS Group International | Elite Football Representation</title>
+
+  <meta
+    name="description"
+    content="BS Group International provides elite football representation, player career management, transfer strategy, contract negotiation and commercial development across international markets."
+  />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="js/i18n.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="brand">
+        <img src="assets/logo-main.png" alt="BS Group International" />
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="players.html" data-i18n="nav.players">Players</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+
+        <a
+          href="contact.html"
+          class="nav-cta"
+          data-i18n="nav.contact"
+        >
+          Contact
+        </a>
+
+        <div class="lang-switcher">
+          <button onclick="setLanguage('en')">EN</button>
+          <button onclick="setLanguage('fr')">FR</button>
+          <button onclick="setLanguage('es')">ES</button>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        Menu
+      </button>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="players.html" data-i18n="nav.players">Players</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+
+      <div class="mobile-lang-switcher">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('es')">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+
+        <p
+          class="eyebrow"
+          data-i18n="hero.eyebrow"
+        >
+          Elite Football Representation
+        </p>
+
+        <h1 data-i18n="hero.title">
+          Global Career Management for Professional Footballers.
+        </h1>
+
+        <p
+          class="hero-text"
+          data-i18n="hero.text"
+        >
+          BS Group International represents elite football talent through strategic transfers,
+          contract negotiation, legal expertise, commercial growth and long-term career planning
+          across international markets.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            href="players.html"
+            class="btn btn-primary"
+            data-i18n="hero.primaryBtn"
+          >
+            View Players
+          </a>
+
+          <a
+            href="contact.html"
+            class="btn btn-secondary"
+            data-i18n="hero.secondaryBtn"
+          >
+            Contact Our Team
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <span data-i18n="hero.trust1">
+            FIFA Regulatory Expertise
+          </span>
+
+          <span data-i18n="hero.trust2">
+            International Transfers
+          </span>
+
+          <span data-i18n="hero.trust3">
+            Player Career Strategy
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CREDIBILITY -->
+
+    <section class="credibility">
+      <div class="container credibility-grid">
+
+        <div>
+          <strong data-i18n="credibility.item1Title">
+            Global
+          </strong>
+
+          <span data-i18n="credibility.item1Text">
+            Football Network
+          </span>
+        </div>
+
+        <div>
+          <strong data-i18n="credibility.item2Title">
+            Elite
+          </strong>
+
+          <span data-i18n="credibility.item2Text">
+            Player Representation
+          </span>
+        </div>
+
+        <div>
+          <strong data-i18n="credibility.item3Title">
+            Strategic
+          </strong>
+
+          <span data-i18n="credibility.item3Text">
+            Transfer Management
+          </span>
+        </div>
+
+        <div>
+          <strong data-i18n="credibility.item4Title">
+            Premium
+          </strong>
+
+          <span data-i18n="credibility.item4Text">
+            Commercial Development
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PLAYERS -->
+
+    <section class="section featured">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p
+            class="eyebrow"
+            data-i18n="players.eyebrow"
+          >
+            Represented Talent
+          </p>
+
+          <h2 data-i18n="players.title">
+            Managing careers at the highest level of the game.
+          </h2>
+
+          <p data-i18n="players.text">
+            From emerging talent to established professionals, BS Group International provides
+            strategic representation built around career longevity, market positioning and trust.
+          </p>
+
+        </div>
+
+        <div class="player-grid">
+
+          <article class="player-card">
+            <img
+              src="assets/player-placeholder.jpg"
+              alt="Featured football player"
+            />
+
+            <div>
+              <span data-i18n="players.card1Role">Forward</span>
+
+              <h3 data-i18n="players.card1Name">
+                Featured Player
+              </h3>
+
+              <p data-i18n="players.card1League">
+                International Market
+              </p>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img
+              src="assets/player-placeholder.jpg"
+              alt="Featured football player"
+            />
+
+            <div>
+              <span data-i18n="players.card2Role">Defender</span>
+
+              <h3 data-i18n="players.card2Name">
+                Featured Player
+              </h3>
+
+              <p data-i18n="players.card2League">
+                European Football
+              </p>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img
+              src="assets/player-placeholder.jpg"
+              alt="Featured football player"
+            />
+
+            <div>
+              <span data-i18n="players.card3Role">Midfielder</span>
+
+              <h3 data-i18n="players.card3Name">
+                Featured Player
+              </h3>
+
+              <p data-i18n="players.card3League">
+                Professional League
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="center-action">
+          <a
+            href="players.html"
+            class="text-link"
+            data-i18n="players.link"
+          >
+            Explore player portfolio
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="section services">
+      <div class="container">
+
+        <div class="section-heading narrow">
+
+          <p
+            class="eyebrow"
+            data-i18n="services.eyebrow"
+          >
+            Agency Services
+          </p>
+
+          <h2 data-i18n="services.title">
+            Complete football management for modern professionals.
+          </h2>
+
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <span>01</span>
+
+            <h3 data-i18n="services.s1Title">
+              Player Representation
+            </h3>
+
+            <p data-i18n="services.s1Text">
+              Contract strategy, club negotiations, career planning and international market positioning.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span>02</span>
+
+            <h3 data-i18n="services.s2Title">
+              Transfers & Club Strategy
+            </h3>
+
+            <p data-i18n="services.s2Text">
+              Managing opportunities, club relationships and strategic moves aligned with player development.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span>03</span>
+
+            <h3 data-i18n="services.s3Title">
+              Legal & Regulatory
+            </h3>
+
+            <p data-i18n="services.s3Text">
+              Football contract support, FIFA regulatory guidance and coordination with specialist advisors.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span>04</span>
+
+            <h3 data-i18n="services.s4Title">
+              Commercial Growth
+            </h3>
+
+            <p data-i18n="services.s4Text">
+              Brand partnerships, sponsorship opportunities, endorsements and image-rights strategy.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span>05</span>
+
+            <h3 data-i18n="services.s5Title">
+              Media & Reputation
+            </h3>
+
+            <p data-i18n="services.s5Text">
+              Public profile management, communication strategy, press positioning and digital presence.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span>06</span>
+
+            <h3 data-i18n="services.s6Title">
+              Lifestyle & Relocation
+            </h3>
+
+            <p data-i18n="services.s6Text">
+              Concierge-level support for relocation, family transition, travel and player wellbeing.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSFERS -->
+
+    <section class="section transfer-section">
+      <div class="container transfer-card">
+
+        <div>
+
+          <p
+            class="eyebrow"
+            data-i18n="transfer.eyebrow"
+          >
+            Transfer Market Intelligence
+          </p>
+
+          <h2 data-i18n="transfer.title">
+            Strategic moves. Long-term careers. Global opportunities.
+          </h2>
+
+          <p data-i18n="transfer.text">
+            We support players through every stage of the transfer process,
+            from opportunity analysis and club alignment to negotiation,
+            contract execution and post-move integration.
+          </p>
+
+        </div>
+
+        <a
+          href="transfers.html"
+          class="btn btn-primary"
+          data-i18n="transfer.button"
+        >
+          View Transfer Activity
+        </a>
+
+      </div>
+    </section>
+
+    <!-- NETWORK -->
+
+    <section class="section network">
+      <div class="container network-grid">
+
+        <div>
+
+          <p
+            class="eyebrow"
+            data-i18n="network.eyebrow"
+          >
+            Global Network
+          </p>
+
+          <h2 data-i18n="network.title">
+            Connected across the football world.
+          </h2>
+
+        </div>
+
+        <div class="network-list">
+          <span data-i18n="network.europe">Europe</span>
+          <span data-i18n="network.uk">United Kingdom</span>
+          <span data-i18n="network.middleEast">Middle East</span>
+          <span data-i18n="network.africa">Africa</span>
+          <span data-i18n="network.global">International Markets</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+
+        <p
+          class="eyebrow"
+          data-i18n="cta.eyebrow"
+        >
+          Private Representation Enquiries
+        </p>
+
+        <h2 data-i18n="cta.title">
+          Building careers with strategy, discretion and ambition.
+        </h2>
+
+        <a
+          href="contact.html"
+          class="btn btn-primary"
+          data-i18n="cta.button"
+        >
+          Speak to BS Group International
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div>
+        <img
+          src="assets/logo-light.png"
+          alt="BS Group International"
+          class="footer-logo"
+        />
+
+        <p data-i18n="footer.text">
+          Elite football representation, career management and international sports advisory.
+        </p>
+      </div>
+
+      <div>
+
+        <h4 data-i18n="footer.navigation">
+          Navigation
+        </h4>
+
+        <a href="players.html" data-i18n="nav.players">
+          Players
+        </a>
+
+        <a href="services.html" data-i18n="nav.services">
+          Services
+        </a>
+
+        <a href="transfers.html" data-i18n="nav.transfers">
+          Transfers
+        </a>
+
+        <a href="contact.html" data-i18n="nav.contact">
+          Contact
+        </a>
+
+      </div>
+
+      <div>
+
+        <h4 data-i18n="footer.contact">
+          Contact
+        </h4>
+
+        <a href="mailto:info@bsgroupinternational.com">
+          info@bsgroupinternational.com
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 BS Group International. All rights reserved.
+      </p>
+    </div>
+
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
