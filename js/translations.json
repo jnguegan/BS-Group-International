@@ -169,8 +169,110 @@
       "privacy": "Privacy",
       "legal": "Legal",
       "contact": "Contact"
+      },
+
+"legal": {
+  "meta": {
+    "title": "Legal Notice & Disclaimer | BS Group International",
+    "description": "Legal Notice and Disclaimer for BS Group International."
+  },
+  "back": "← Back to website",
+  "eyebrow": "BS Group International",
+  "title": "Legal Notice & Disclaimer",
+  "intro": "This Legal Notice and Disclaimer governs the use of the BS Group International website and provides information concerning the business responsible for its operation.",
+
+  "company": {
+    "licenceLabel": "Economic Licence No.:",
+    "websiteLabel": "Website:",
+    "emailLabel": "Email:"
+  },
+
+  "sections": {
+    "corporate": {
+      "title": "1. Corporate Information",
+      "text": "This website is operated under the BS Group International brand by BS Group Entertainment Sports LLC, an entity established in Abu Dhabi, United Arab Emirates."
+    },
+
+    "services": {
+      "title": "2. Football and Sports Services",
+      "p1": "BS Group International operates within the professional football and sports sector and provides services connected with talent, career strategy, sports services, commercial opportunities and related professional activities.",
+      "p2": "Where an activity constitutes a regulated football agent service, such service is undertaken only where appropriate and in accordance with applicable football regulations, licensing requirements and contractual arrangements."
+    },
+
+    "representation": {
+      "title": "3. Player and Representation Disclaimer",
+      "p1": "References to football players, clubs, competitions or other sporting organisations on this website are provided for informational and professional presentation purposes.",
+      "p2": "The appearance of a player on this website should not, by itself, be interpreted as confirmation that BS Group International holds an exclusive representation agreement with that player.",
+      "p3": "The precise nature and scope of any professional relationship, representation mandate, advisory role or other engagement is determined by the applicable contractual arrangements in force between the relevant parties."
+    },
+
+    "playerInfo": {
+      "title": "4. Player, Club and Competition Information",
+      "p1": "Information concerning players, clubs, leagues, international status, sporting careers and competitions is provided in good faith and is intended to reflect information reasonably available at the time of publication.",
+      "p2": "Professional football circumstances can change rapidly, including transfers, loans, registrations, squad status and international selection. BS Group International does not guarantee that every item of sporting information displayed on the website will remain continuously current."
+    },
+
+    "images": {
+      "title": "5. Images and Third-Party Rights",
+      "p1": "Photographs, club names, competition names, trademarks, logos and other third-party materials may remain the property of their respective owners.",
+      "p2": "Their appearance on this website does not imply ownership by BS Group International, nor does it imply endorsement, sponsorship or affiliation unless expressly stated.",
+      "p3": "If a rights holder believes that material appearing on this website infringes their legitimate rights, they may contact BS Group International so that the matter can be reviewed."
+    },
+
+    "advice": {
+      "title": "6. No Professional or Financial Advice",
+      "p1": "Content published on this website is provided for general informational purposes and should not be treated as legal, tax, financial, investment or other regulated professional advice.",
+      "p2": "Visitors should obtain appropriate independent professional advice before making decisions requiring specialist legal, financial, regulatory or tax expertise."
+    },
+
+    "accuracy": {
+      "title": "7. Accuracy of Information",
+      "p1": "BS Group International seeks to ensure that information published on this website is accurate and appropriate. However, no guarantee is given that all information will at all times be complete, error-free or fully up to date.",
+      "p2": "BS Group International reserves the right to amend, update, remove or replace website content without prior notice."
+    },
+
+    "ip": {
+      "title": "8. Intellectual Property",
+      "p1": "Unless otherwise indicated, the BS Group International brand, website design, original written content and other proprietary materials created for this website are protected by applicable intellectual property laws.",
+      "p2": "Such material may not be reproduced, distributed, modified or used commercially without prior authorisation, except where permitted by law."
+    },
+
+    "links": {
+      "title": "9. External Links",
+      "p1": "This website may contain links to third-party websites or online services. Such links are provided for convenience and information.",
+      "p2": "BS Group International does not control third-party websites and accepts no responsibility for their availability, content, security, privacy practices or terms of use."
+    },
+
+    "liability": {
+      "title": "10. Limitation of Liability",
+      "p1": "To the extent permitted by applicable law, BS Group International and BS Group Entertainment Sports LLC shall not be liable for loss or damage arising solely from reliance upon general information published on this website or from temporary interruption or unavailability of the website.",
+      "p2": "Nothing in this notice excludes or limits liability where such exclusion or limitation would be prohibited by applicable law."
+    },
+
+    "updates": {
+      "title": "11. Updates to this Legal Notice",
+      "p1": "This Legal Notice and Disclaimer may be revised periodically to reflect changes to the website, business operations or applicable requirements.",
+      "date": "Last updated: July 2026."
+    },
+
+    "contact": {
+      "title": "12. Contact",
+      "p1": "Questions concerning this website or this Legal Notice may be sent to:"
     }
   },
+
+  "footer": {
+    "copyright": "© 2026 BS Group International. All rights reserved.",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "terms": "Terms of Use",
+    "home": "Home"
+  }
+}
+},
+  
+
+  
 
   "fr": {
     "meta": {
@@ -341,8 +443,110 @@
       "privacy": "Confidentialité",
       "legal": "Mentions légales",
       "contact": "Contact"
+    
+  },
+
+"legal": {
+  "meta": {
+    "title": "Mentions légales et clause de non-responsabilité | BS Group International",
+    "description": "Mentions légales et clause de non-responsabilité de BS Group International."
+  },
+  "back": "← Retour au site",
+  "eyebrow": "BS Group International",
+  "title": "Mentions légales et clause de non-responsabilité",
+  "intro": "Les présentes mentions légales et la présente clause de non-responsabilité régissent l’utilisation du site internet de BS Group International et fournissent des informations sur l’entreprise responsable de son exploitation.",
+
+  "company": {
+    "licenceLabel": "N° de licence économique :",
+    "websiteLabel": "Site internet :",
+    "emailLabel": "E-mail :"
+  },
+
+  "sections": {
+    "corporate": {
+      "title": "1. Informations sur la société",
+      "text": "Ce site internet est exploité sous la marque BS Group International par BS Group Entertainment Sports LLC, une société établie à Abu Dhabi, aux Émirats arabes unis."
+    },
+
+    "services": {
+      "title": "2. Services liés au football et au sport",
+      "p1": "BS Group International exerce ses activités dans le secteur du football professionnel et du sport et fournit des services liés aux talents, à la stratégie de carrière, aux services sportifs, aux opportunités commerciales et à d’autres activités professionnelles connexes.",
+      "p2": "Lorsqu’une activité constitue un service réglementé d’agent de football, ce service est fourni uniquement lorsque cela est approprié et conformément aux règlements applicables au football, aux exigences en matière de licence et aux accords contractuels."
+    },
+
+    "representation": {
+      "title": "3. Clause relative aux joueurs et à la représentation",
+      "p1": "Les références à des joueurs de football, clubs, compétitions ou autres organisations sportives figurant sur ce site sont fournies à des fins d’information et de présentation professionnelle.",
+      "p2": "La présence d’un joueur sur ce site ne doit pas, à elle seule, être interprétée comme la confirmation que BS Group International détient un mandat exclusif de représentation de ce joueur.",
+      "p3": "La nature et l’étendue précises de toute relation professionnelle, de tout mandat de représentation, rôle de conseil ou autre engagement sont déterminées par les accords contractuels applicables en vigueur entre les parties concernées."
+    },
+
+    "playerInfo": {
+      "title": "4. Informations sur les joueurs, clubs et compétitions",
+      "p1": "Les informations concernant les joueurs, clubs, championnats, statuts internationaux, carrières sportives et compétitions sont fournies de bonne foi et visent à refléter les informations raisonnablement disponibles au moment de leur publication.",
+      "p2": "Les circonstances dans le football professionnel peuvent évoluer rapidement, notamment en matière de transferts, prêts, inscriptions, statut au sein d’un effectif et sélections internationales. BS Group International ne garantit pas que toutes les informations sportives affichées sur le site resteront continuellement à jour."
+    },
+
+    "images": {
+      "title": "5. Images et droits de tiers",
+      "p1": "Les photographies, noms de clubs, noms de compétitions, marques, logos et autres éléments appartenant à des tiers peuvent demeurer la propriété de leurs détenteurs respectifs.",
+      "p2": "Leur présence sur ce site n’implique pas qu’ils appartiennent à BS Group International et ne constitue pas davantage une approbation, un parrainage ou une affiliation, sauf indication expresse contraire.",
+      "p3": "Si un titulaire de droits estime qu’un contenu figurant sur ce site porte atteinte à ses droits légitimes, il peut contacter BS Group International afin que la situation soit examinée."
+    },
+
+    "advice": {
+      "title": "6. Absence de conseil professionnel ou financier",
+      "p1": "Le contenu publié sur ce site est fourni à titre d’information générale et ne doit pas être considéré comme un conseil juridique, fiscal, financier, en investissement ou comme tout autre conseil professionnel réglementé.",
+      "p2": "Les visiteurs doivent obtenir les conseils indépendants de professionnels compétents avant de prendre toute décision nécessitant une expertise juridique, financière, réglementaire ou fiscale."
+    },
+
+    "accuracy": {
+      "title": "7. Exactitude des informations",
+      "p1": "BS Group International s’efforce de veiller à ce que les informations publiées sur ce site soient exactes et appropriées. Toutefois, aucune garantie n’est donnée quant au caractère constamment complet, exempt d’erreurs ou parfaitement à jour de toutes les informations.",
+      "p2": "BS Group International se réserve le droit de modifier, mettre à jour, supprimer ou remplacer le contenu du site sans préavis."
+    },
+
+    "ip": {
+      "title": "8. Propriété intellectuelle",
+      "p1": "Sauf indication contraire, la marque BS Group International, la conception du site, les contenus rédactionnels originaux et les autres éléments exclusifs créés pour ce site sont protégés par les lois applicables en matière de propriété intellectuelle.",
+      "p2": "Ces éléments ne peuvent être reproduits, distribués, modifiés ou utilisés à des fins commerciales sans autorisation préalable, sauf dans les cas autorisés par la loi."
+    },
+
+    "links": {
+      "title": "9. Liens externes",
+      "p1": "Ce site peut contenir des liens vers des sites internet ou services en ligne de tiers. Ces liens sont fournis à des fins de commodité et d’information.",
+      "p2": "BS Group International ne contrôle pas les sites internet de tiers et décline toute responsabilité concernant leur disponibilité, leur contenu, leur sécurité, leurs pratiques en matière de confidentialité ou leurs conditions d’utilisation."
+    },
+
+    "liability": {
+      "title": "10. Limitation de responsabilité",
+      "p1": "Dans les limites autorisées par la législation applicable, BS Group International et BS Group Entertainment Sports LLC ne pourront être tenus responsables de pertes ou dommages résultant uniquement de la confiance accordée aux informations générales publiées sur ce site ou d’une interruption temporaire ou indisponibilité du site.",
+      "p2": "Aucune disposition des présentes mentions légales n’exclut ou ne limite une responsabilité lorsque cette exclusion ou limitation serait interdite par la législation applicable."
+    },
+
+    "updates": {
+      "title": "11. Mise à jour des présentes mentions légales",
+      "p1": "Les présentes mentions légales et la présente clause de non-responsabilité peuvent être révisées périodiquement afin de tenir compte des modifications du site, des activités de l’entreprise ou des exigences applicables.",
+      "date": "Dernière mise à jour : juillet 2026."
+    },
+
+    "contact": {
+      "title": "12. Contact",
+      "p1": "Toute question concernant ce site ou les présentes mentions légales peut être adressée à :"
     }
   },
+
+  "footer": {
+    "copyright": "© 2026 BS Group International. Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies",
+    "terms": "Conditions d’utilisation",
+    "home": "Accueil"
+  }
+}
+},
+    
+    
 
   "es": {
     "meta": {
@@ -514,6 +718,105 @@
       "privacy": "Privacidad",
       "legal": "Aviso legal",
       "contact": "Contacto"
+    
+  },
+
+    "legal": {
+  "meta": {
+    "title": "Aviso legal y exención de responsabilidad | BS Group International",
+    "description": "Aviso legal y exención de responsabilidad de BS Group International."
+  },
+  "back": "← Volver al sitio web",
+  "eyebrow": "BS Group International",
+  "title": "Aviso legal y exención de responsabilidad",
+  "intro": "El presente Aviso Legal y Exención de Responsabilidad regula el uso del sitio web de BS Group International y proporciona información sobre la empresa responsable de su funcionamiento.",
+
+  "company": {
+    "licenceLabel": "N.º de licencia económica:",
+    "websiteLabel": "Sitio web:",
+    "emailLabel": "Correo electrónico:"
+  },
+
+  "sections": {
+    "corporate": {
+      "title": "1. Información corporativa",
+      "text": "Este sitio web opera bajo la marca BS Group International y es gestionado por BS Group Entertainment Sports LLC, una entidad establecida en Abu Dabi, Emiratos Árabes Unidos."
+    },
+
+    "services": {
+      "title": "2. Servicios de fútbol y deporte",
+      "p1": "BS Group International desarrolla su actividad en el sector del fútbol profesional y del deporte y presta servicios relacionados con el talento, la estrategia de carrera, los servicios deportivos, las oportunidades comerciales y otras actividades profesionales relacionadas.",
+      "p2": "Cuando una actividad constituya un servicio regulado de agente de fútbol, dicho servicio se prestará únicamente cuando corresponda y de conformidad con la normativa aplicable al fútbol, los requisitos de licencia y los acuerdos contractuales."
+    },
+
+    "representation": {
+      "title": "3. Exención de responsabilidad sobre jugadores y representación",
+      "p1": "Las referencias a jugadores de fútbol, clubes, competiciones u otras organizaciones deportivas que aparecen en este sitio web se proporcionan con fines informativos y de presentación profesional.",
+      "p2": "La aparición de un jugador en este sitio web no debe interpretarse, por sí sola, como confirmación de que BS Group International mantiene un acuerdo de representación exclusiva con dicho jugador.",
+      "p3": "La naturaleza y el alcance exactos de cualquier relación profesional, mandato de representación, función de asesoramiento u otro tipo de colaboración estarán determinados por los acuerdos contractuales aplicables y vigentes entre las partes correspondientes."
+    },
+
+    "playerInfo": {
+      "title": "4. Información sobre jugadores, clubes y competiciones",
+      "p1": "La información relativa a jugadores, clubes, ligas, condición internacional, carreras deportivas y competiciones se proporciona de buena fe y pretende reflejar la información razonablemente disponible en el momento de su publicación.",
+      "p2": "Las circunstancias del fútbol profesional pueden cambiar rápidamente, incluidos los traspasos, cesiones, inscripciones, situación dentro de la plantilla y convocatorias internacionales. BS Group International no garantiza que toda la información deportiva mostrada en el sitio web permanezca continuamente actualizada."
+    },
+
+    "images": {
+      "title": "5. Imágenes y derechos de terceros",
+      "p1": "Las fotografías, nombres de clubes, nombres de competiciones, marcas comerciales, logotipos y otros materiales de terceros pueden seguir siendo propiedad de sus respectivos titulares.",
+      "p2": "Su aparición en este sitio web no implica que sean propiedad de BS Group International, ni supone respaldo, patrocinio o afiliación alguna, salvo que se indique expresamente lo contrario.",
+      "p3": "Si un titular de derechos considera que algún material publicado en este sitio web vulnera sus derechos legítimos, puede ponerse en contacto con BS Group International para que la cuestión sea revisada."
+    },
+
+    "advice": {
+      "title": "6. Ausencia de asesoramiento profesional o financiero",
+      "p1": "El contenido publicado en este sitio web se proporciona únicamente con fines informativos generales y no debe considerarse asesoramiento jurídico, fiscal, financiero, de inversión ni ningún otro tipo de asesoramiento profesional regulado.",
+      "p2": "Los visitantes deben obtener asesoramiento profesional independiente y adecuado antes de tomar decisiones que requieran conocimientos especializados de carácter jurídico, financiero, regulatorio o fiscal."
+    },
+
+    "accuracy": {
+      "title": "7. Exactitud de la información",
+      "p1": "BS Group International procura garantizar que la información publicada en este sitio web sea exacta y adecuada. No obstante, no se garantiza que toda la información sea en todo momento completa, esté libre de errores o se encuentre plenamente actualizada.",
+      "p2": "BS Group International se reserva el derecho de modificar, actualizar, eliminar o sustituir el contenido del sitio web sin previo aviso."
+    },
+
+    "ip": {
+      "title": "8. Propiedad intelectual",
+      "p1": "Salvo que se indique lo contrario, la marca BS Group International, el diseño del sitio web, los contenidos escritos originales y otros materiales propios creados para este sitio están protegidos por la legislación aplicable en materia de propiedad intelectual.",
+      "p2": "Dichos materiales no podrán ser reproducidos, distribuidos, modificados ni utilizados con fines comerciales sin autorización previa, salvo en los casos permitidos por la ley."
+    },
+
+    "links": {
+      "title": "9. Enlaces externos",
+      "p1": "Este sitio web puede contener enlaces a sitios web o servicios en línea de terceros. Dichos enlaces se proporcionan únicamente por comodidad y con fines informativos.",
+      "p2": "BS Group International no controla los sitios web de terceros y no asume responsabilidad alguna por su disponibilidad, contenido, seguridad, prácticas de privacidad o condiciones de uso."
+    },
+
+    "liability": {
+      "title": "10. Limitación de responsabilidad",
+      "p1": "En la medida permitida por la legislación aplicable, BS Group International y BS Group Entertainment Sports LLC no serán responsables de pérdidas o daños derivados exclusivamente de la confianza depositada en la información general publicada en este sitio web ni de una interrupción temporal o indisponibilidad del mismo.",
+      "p2": "Nada de lo dispuesto en este aviso excluye o limita la responsabilidad cuando dicha exclusión o limitación esté prohibida por la legislación aplicable."
+    },
+
+    "updates": {
+      "title": "11. Actualizaciones de este Aviso Legal",
+      "p1": "El presente Aviso Legal y Exención de Responsabilidad podrá revisarse periódicamente para reflejar cambios en el sitio web, en las actividades de la empresa o en los requisitos aplicables.",
+      "date": "Última actualización: julio de 2026."
+    },
+
+    "contact": {
+      "title": "12. Contacto",
+      "p1": "Las consultas relacionadas con este sitio web o con el presente Aviso Legal pueden enviarse a:"
     }
+  },
+
+  "footer": {
+    "copyright": "© 2026 BS Group International. Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "cookies": "Cookies",
+    "terms": "Condiciones de uso",
+    "home": "Inicio"
   }
+}
 }
