@@ -34,70 +34,93 @@
       "description": "BS Group International represents professional footballers through strategic career management, international transfers, negotiation and long-term professional development.",
 
       "players": {
-        "timothyWeah": {
-          "name": "Timothy Weah",
-          "status": "USA International",
-          "role": "Professional Footballer"
-        },
-        "mohamedSimakan": {
-          "name": "Mohamed Simakan",
-          "status": "Elite Defender",
-          "role": "Professional Footballer"
-        },
-
-        "castelloLukeba": {
-        "name": "Castello Lukeba",
-        "status": "France International",
-        "role": "Professional Footballer"  
-        },
-        
-        "nicolasPepe": {
-          "name": "Nicolas Pépé",
-          "status": "Ivory Coast International",
-          "role": "Professional Footballer"
-        },
-        "loumTchaouna": {
-          "name": "Loum Tchaouna",
-          "status": "France U21",
-          "role": "Coventry City"
-        },
-        "georgeIlenikhena": {
-          "name": "George Ilenikhena",
-          "status": "Forward",
-          "role": "Professional Footballer"
-        },
-        "djeidiGassama": {
-          "name": "Djeidi Gassama",
-          "status": "Winger",
-          "role": "Professional Footballer"
-        },
-        "kevinBoma": {
-          "name": "Kévin Boma",
-          "status": "Defender",
-          "role": "Professional Footballer"
-        },
-        "idjessiMetsoko": {
-          "name": "Idjessi Metsoko",
-          "status": "Togo International",
-          "role": "Professional Footballer"
-        },
-        "jordyMakengo": {
-          "name": "Jordy Makengo",
-          "status": "Left Back",
-          "role": "SC Freiburg"
-        },
-              "nathanaelMbuku": {
-        "name": "Nathanaël Mbuku",
-        "status": "DR Congo International",
-        "role": "Left Winger"
-      },
-      "khalilFayad": {
-        "name": "Khalil Fayad",
-        "status": "Midfielder",
-        "role": "Montpellier HSC"
-      }
-            }
-          },
+  "timothyWeah": {
+    "name": "Timothy Weah",
+    "position": "Right Winger",
+    "club": "Olympique Marseille",
+    "league": "Ligue 1 · France",
+    "international": "USA International"
+  },
+  "mohamedSimakan": {
+    "name": "Mohamed Simakan",
+    "position": "Centre-Back",
+    "club": "Al-Nassr FC",
+    "league": "Saudi Pro League · Saudi Arabia",
+    "international": ""
+  },
+  "castelloLukeba": {
+    "name": "Castello Lukeba",
+    "position": "Centre-Back",
+    "club": "RB Leipzig",
+    "league": "Bundesliga · Germany",
+    "international": "France International"
+  },
+  "nicolasPepe": {
+    "name": "Nicolas Pépé",
+    "position": "Right Winger",
+    "club": "Villarreal CF",
+    "league": "LaLiga · Spain",
+    "international": "Ivory Coast International"
+  },
+  "loumTchaouna": {
+    "name": "Loum Tchaouna",
+    "position": "Right Winger",
+    "club": "Coventry City",
+    "league": "Premier League · England",
+    "international": "Former France U21 International"
+  },
+  "georgeIlenikhena": {
+    "name": "George Ilenikhena",
+    "position": "Centre-Forward",
+    "club": "Al-Ittihad Club",
+    "league": "Saudi Pro League · Saudi Arabia",
+    "international": ""
+  },
+  "djeidiGassama": {
+    "name": "Djeidi Gassama",
+    "position": "Left Winger",
+    "club": "Rangers FC",
+    "league": "Scottish Premiership · Scotland",
+    "international": "Mauritania International"
+  },
+  "kevinBoma": {
+    "name": "Kévin Boma",
+    "position": "Centre-Back",
+    "club": "Red Bull Salzburg",
+    "league": "Austrian Bundesliga · Austria",
+    "international": "Togo International"
+  },
+  "idjessiMetsoko": {
+    "name": "Idjessi Metsoko",
+    "position": "Centre-Forward",
+    "club": "Dundee United FC",
+    "league": "Scottish Premiership · Scotland",
+    "international": "Togo International"
+  },
+  "jordyMakengo": {
+    "name": "Jordy Makengo",
+    "position": "Left-Back",
+    "club": "SC Freiburg",
+    "league": "Bundesliga · Germany",
+    "international": ""
+  },
+  "nathanaelMbuku": {
+    "name": "Nathanaël Mbuku",
+    "position": "Left Winger",
+    "club": "FC Augsburg",
+    "league": "Bundesliga · Germany",
+    "international": "DR Congo International"
+  },
+  "khalilFayad": {
+    "name": "Khalil Fayad",
+    "position": "Central Midfield",
+    "club": "Montpellier HSC",
+    "league": "Ligue 2 · France",
+    "international": ""
+  }
+}  
+    
+    },
 
     "international": {
       "eyebrow": "International Presence",
@@ -184,69 +207,91 @@
       "description": "BS Group International représente des footballeurs professionnels à travers une gestion stratégique de carrière, des transferts internationaux, la négociation et un accompagnement professionnel à long terme.",
 
       "players": {
-        "timothyWeah": {
-          "name": "Timothy Weah",
-          "status": "International américain",
-          "role": "Footballeur professionnel"
-        },
-        "mohamedSimakan": {
-          "name": "Mohamed Simakan",
-          "status": "Défenseur",
-          "role": "Footballeur professionnel"
-        },
-
-        "castelloLukeba": {
-        "name": "Castello Lukeba",
-        "status": "International français",
-        "role": "Footballeur professionnel"
-        },
-        
-        "nicolasPepe": {
-          "name": "Nicolas Pépé",
-          "status": "International ivoirien",
-          "role": "Footballeur professionnel"
-        },
-        "loumTchaouna": {
-          "name": "Loum Tchaouna",
-          "status": "International France Espoirs",
-          "role": "Coventry City"
-        },
-        "georgeIlenikhena": {
-          "name": "George Ilenikhena",
-          "status": "Attaquant",
-          "role": "Footballeur professionnel"
-        },
-        "djeidiGassama": {
-          "name": "Djeidi Gassama",
-          "status": "Ailier",
-          "role": "Footballeur professionnel"
-        },
-        "kevinBoma": {
-          "name": "Kévin Boma",
-          "status": "Défenseur",
-          "role": "Footballeur professionnel"
-        },
-        "idjessiMetsoko": {
-          "name": "Idjessi Metsoko",
-          "status": "International togolais",
-          "role": "Footballeur professionnel"
-        },
-        "jordyMakengo": {
-          "name": "Jordy Makengo",
-          "status": "Arrière gauche",
-          "role": "SC Freiburg"
-        },
-        "nathanaelMbuku": {
-  "name": "Nathanaël Mbuku",
-  "status": "International congolais",
-  "role": "Ailier gauche"
-},
-"khalilFayad": {
-  "name": "Khalil Fayad",
-  "status": "Milieu de terrain",
-  "role": "Montpellier HSC"
+  "timothyWeah": {
+    "name": "Timothy Weah",
+    "position": "Ailier droit",
+    "club": "Olympique Marseille",
+    "league": "Ligue 1 · France",
+    "international": "International américain"
+  },
+  "mohamedSimakan": {
+    "name": "Mohamed Simakan",
+    "position": "Défenseur central",
+    "club": "Al-Nassr FC",
+    "league": "Saudi Pro League · Arabie saoudite",
+    "international": ""
+  },
+  "castelloLukeba": {
+    "name": "Castello Lukeba",
+    "position": "Défenseur central",
+    "club": "RB Leipzig",
+    "league": "Bundesliga · Allemagne",
+    "international": "International français"
+  },
+  "nicolasPepe": {
+    "name": "Nicolas Pépé",
+    "position": "Ailier droit",
+    "club": "Villarreal CF",
+    "league": "LaLiga · Espagne",
+    "international": "International ivoirien"
+  },
+  "loumTchaouna": {
+    "name": "Loum Tchaouna",
+    "position": "Ailier droit",
+    "club": "Coventry City",
+    "league": "Premier League · Angleterre",
+    "international": "Ancien international France Espoirs"
+  },
+  "georgeIlenikhena": {
+    "name": "George Ilenikhena",
+    "position": "Avant-centre",
+    "club": "Al-Ittihad Club",
+    "league": "Saudi Pro League · Arabie saoudite",
+    "international": ""
+  },
+  "djeidiGassama": {
+    "name": "Djeidi Gassama",
+    "position": "Ailier gauche",
+    "club": "Rangers FC",
+    "league": "Scottish Premiership · Écosse",
+    "international": "International mauritanien"
+  },
+  "kevinBoma": {
+    "name": "Kévin Boma",
+    "position": "Défenseur central",
+    "club": "Red Bull Salzburg",
+    "league": "Bundesliga autrichienne · Autriche",
+    "international": "International togolais"
+  },
+  "idjessiMetsoko": {
+    "name": "Idjessi Metsoko",
+    "position": "Avant-centre",
+    "club": "Dundee United FC",
+    "league": "Scottish Premiership · Écosse",
+    "international": "International togolais"
+  },
+  "jordyMakengo": {
+    "name": "Jordy Makengo",
+    "position": "Arrière gauche",
+    "club": "SC Freiburg",
+    "league": "Bundesliga · Allemagne",
+    "international": ""
+  },
+  "nathanaelMbuku": {
+    "name": "Nathanaël Mbuku",
+    "position": "Ailier gauche",
+    "club": "FC Augsburg",
+    "league": "Bundesliga · Allemagne",
+    "international": "International congolais (RDC)"
+  },
+  "khalilFayad": {
+    "name": "Khalil Fayad",
+    "position": "Milieu central",
+    "club": "Montpellier HSC",
+    "league": "Ligue 2 · France",
+    "international": ""
+  }
 }
-      }
     },
 
     "international": {
@@ -333,70 +378,93 @@
       "title": "Carreras construidas para el más alto nivel.",
       "description": "BS Group International representa a futbolistas profesionales mediante gestión estratégica de carrera, transferencias internacionales, negociación y desarrollo profesional a largo plazo.",
 
-      "players": {
-        "timothyWeah": {
-          "name": "Timothy Weah",
-          "status": "Internacional con Estados Unidos",
-          "role": "Futbolista profesional"
-        },
-        "mohamedSimakan": {
-          "name": "Mohamed Simakan",
-          "status": "Defensa",
-          "role": "Futbolista profesional"
-        },
-
-        "castelloLukeba": {
-        "name": "Castello Lukeba",
-        "status": "Internacional con Francia",
-        "role": "Futbolista profesional"
-        },
-        
-        "nicolasPepe": {
-          "name": "Nicolas Pépé",
-          "status": "Internacional con Costa de Marfil",
-          "role": "Futbolista profesional"
-        },
-        "loumTchaouna": {
-          "name": "Loum Tchaouna",
-          "status": "Internacional Sub-21 con Francia",
-          "role": "Coventry City"
-        },
-        "georgeIlenikhena": {
-          "name": "George Ilenikhena",
-          "status": "Delantero",
-          "role": "Futbolista profesional"
-        },
-        "djeidiGassama": {
-          "name": "Djeidi Gassama",
-          "status": "Extremo",
-          "role": "Futbolista profesional"
-        },
-        "kevinBoma": {
-          "name": "Kévin Boma",
-          "status": "Defensa",
-          "role": "Futbolista profesional"
-        },
-        "idjessiMetsoko": {
-          "name": "Idjessi Metsoko",
-          "status": "Internacional con Togo",
-          "role": "Futbolista profesional"
-        },
-        "jordyMakengo": {
-          "name": "Jordy Makengo",
-          "status": "Lateral izquierdo",
-          "role": "SC Freiburg"
-        },
-        "nathanaelMbuku": {
-  "name": "Nathanaël Mbuku",
-  "status": "Internacional con RD del Congo",
-  "role": "Extremo izquierdo"
-},
-"khalilFayad": {
-  "name": "Khalil Fayad",
-  "status": "Centrocampista",
-  "role": "Montpellier HSC"
+     "players": {
+  "timothyWeah": {
+    "name": "Timothy Weah",
+    "position": "Extremo derecho",
+    "club": "Olympique Marseille",
+    "league": "Ligue 1 · Francia",
+    "international": "Internacional con Estados Unidos"
+  },
+  "mohamedSimakan": {
+    "name": "Mohamed Simakan",
+    "position": "Defensa central",
+    "club": "Al-Nassr FC",
+    "league": "Saudi Pro League · Arabia Saudí",
+    "international": ""
+  },
+  "castelloLukeba": {
+    "name": "Castello Lukeba",
+    "position": "Defensa central",
+    "club": "RB Leipzig",
+    "league": "Bundesliga · Alemania",
+    "international": "Internacional con Francia"
+  },
+  "nicolasPepe": {
+    "name": "Nicolas Pépé",
+    "position": "Extremo derecho",
+    "club": "Villarreal CF",
+    "league": "LaLiga · España",
+    "international": "Internacional con Costa de Marfil"
+  },
+  "loumTchaouna": {
+    "name": "Loum Tchaouna",
+    "position": "Extremo derecho",
+    "club": "Coventry City",
+    "league": "Premier League · Inglaterra",
+    "international": "Exinternacional sub-21 con Francia"
+  },
+  "georgeIlenikhena": {
+    "name": "George Ilenikhena",
+    "position": "Delantero centro",
+    "club": "Al-Ittihad Club",
+    "league": "Saudi Pro League · Arabia Saudí",
+    "international": ""
+  },
+  "djeidiGassama": {
+    "name": "Djeidi Gassama",
+    "position": "Extremo izquierdo",
+    "club": "Rangers FC",
+    "league": "Scottish Premiership · Escocia",
+    "international": "Internacional con Mauritania"
+  },
+  "kevinBoma": {
+    "name": "Kévin Boma",
+    "position": "Defensa central",
+    "club": "Red Bull Salzburg",
+    "league": "Bundesliga austríaca · Austria",
+    "international": "Internacional con Togo"
+  },
+  "idjessiMetsoko": {
+    "name": "Idjessi Metsoko",
+    "position": "Delantero centro",
+    "club": "Dundee United FC",
+    "league": "Scottish Premiership · Escocia",
+    "international": "Internacional con Togo"
+  },
+  "jordyMakengo": {
+    "name": "Jordy Makengo",
+    "position": "Lateral izquierdo",
+    "club": "SC Freiburg",
+    "league": "Bundesliga · Alemania",
+    "international": ""
+  },
+  "nathanaelMbuku": {
+    "name": "Nathanaël Mbuku",
+    "position": "Extremo izquierdo",
+    "club": "FC Augsburg",
+    "league": "Bundesliga · Alemania",
+    "international": "Internacional con RD del Congo"
+  },
+  "khalilFayad": {
+    "name": "Khalil Fayad",
+    "position": "Centrocampista",
+    "club": "Montpellier HSC",
+    "league": "Ligue 2 · Francia",
+    "international": ""
+  }
 }
-      }
+    
     },
 
     "international": {
