@@ -1702,8 +1702,24 @@
       });
     });
 
-  function closeIntro() {
+ function closeIntro() {
   intro.classList.add("hidden");
+
+  /* Always reveal the homepage from the hero section */
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "instant"
+  });
+
+  /* Remove any old #contact or other anchor from the URL */
+  if (window.location.hash) {
+    history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search
+    );
+  }
 }
 
 skipIntro.addEventListener("click", closeIntro);
