@@ -115,6 +115,22 @@
       opacity: 0.38;
       filter: contrast(115%) saturate(80%);
     }
+    .intro-background {
+  transform: scale(1.08);
+  animation: cinematicZoom 5.5s ease-out forwards;
+}
+
+@keyframes cinematicZoom {
+  from {
+    transform: scale(1.08);
+    filter: brightness(0.35) contrast(1.15);
+  }
+
+  to {
+    transform: scale(1);
+    filter: brightness(0.52) contrast(1.08);
+  }
+}
 
     .intro-overlay {
       position: absolute;
@@ -167,21 +183,81 @@
       font-size: 0.68rem;
     }
 
-    @keyframes reveal {
-      from {
-        opacity: 0;
-        transform: translateY(22px);
-      }
+   @keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    /* ===========================
-       HEADER
-    =========================== */
+
+/* CINEMATIC INTRO REVEAL */
+
+.intro-reveal-logo {
+  opacity: 0;
+  transform: scale(0.92);
+  animation: introLogoReveal 1.2s ease-out 0.5s forwards;
+}
+
+.intro-reveal-title {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: introTitleReveal 1s ease-out 1.8s forwards;
+}
+
+.intro-reveal-tagline {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: introTaglineReveal 0.9s ease-out 2.8s forwards;
+}
+
+@keyframes introLogoReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+    filter: drop-shadow(0 0 0 rgba(212,175,55,0));
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 28px rgba(212,175,55,0.32));
+  }
+}
+
+@keyframes introTitleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes introTaglineReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
 
     header {
       position: fixed;
@@ -711,42 +787,35 @@
 
 <div id="intro">
 
-  <video
-    class="intro-video"
-    autoplay
-    muted
-    playsinline
-    id="introVideo"
-  >
-    <source
-      src="assets/video/bs-group-opening.mp4"
-      type="video/mp4"
-    />
-  </video>
+ <img
+  src="assets/hero/bs-group-hero.jpg"
+  alt=""
+  class="intro-video intro-background"
+/>
 
   <div class="intro-overlay"></div>
 
-  <div class="intro-content">
+<div class="intro-content">
 
-    <img
-      src="assets/branding/bs-group-international-logo-gold.png"
-      alt="BS Group International"
-      class="intro-logo"
-    />
+  <img
+    src="assets/branding/bs-group-international-logo-gold.png"
+    alt="BS Group International"
+    class="intro-logo intro-reveal-logo"
+  />
 
-    <h1 class="intro-title">
-      <span data-i18n="intro.brandLine1">BS GROUP</span><br />
-      <span class="gold" data-i18n="intro.brandLine2">INTERNATIONAL</span>
-    </h1>
+  <h1 class="intro-title intro-reveal-title">
+    <span data-i18n="intro.brandLine1">BS GROUP</span><br />
+    <span class="gold" data-i18n="intro.brandLine2">INTERNATIONAL</span>
+  </h1>
 
-    <p
-      class="intro-tagline"
-      data-i18n="intro.tagline"
-    >
-      Talent. Strategy. Legacy.
-    </p>
+  <p
+    class="intro-tagline intro-reveal-tagline"
+    data-i18n="intro.tagline"
+  >
+    Talent. Strategy. Legacy.
+  </p>
 
-  </div>
+</div>
 
   <button
     id="skipIntro"
@@ -1634,19 +1703,14 @@
     });
 
   function closeIntro() {
-    intro.classList.add("hidden");
-  }
+  intro.classList.add("hidden");
+}
 
-  skipIntro.addEventListener("click", closeIntro);
+skipIntro.addEventListener("click", closeIntro);
 
-  introVideo.addEventListener("ended", closeIntro);
-
-  introVideo.addEventListener("error", () => {
-    setTimeout(closeIntro, 2500);
-  });
-
-  /* Safety fallback */
-  setTimeout(closeIntro, 7000);
+/* Automatically reveal the homepage after the cinematic intro */
+setTimeout(closeIntro, 5500);
+  
 
   window.addEventListener("scroll", () => {
     header.classList.toggle(
