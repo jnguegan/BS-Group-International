@@ -442,12 +442,33 @@
       margin-top: 0.35rem;
       letter-spacing: -0.02em;
     }
+   
+.player-club {
+  color: #f5f0e6;
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
 
-    .player-info p {
-      color: #bcb7ae;
-      margin-top: 0.25rem;
-      font-size: 0.9rem;
-    }
+.player-league {
+  color: #aaa69e;
+  margin-top: 0.18rem;
+  font-size: 0.78rem;
+}
+
+.player-international {
+  color: #d4af37;
+  margin-top: 0.45rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.player-international:empty {
+  display: none;
+}
+    
 
     /* ===========================
        INTERNATIONAL
@@ -868,269 +889,358 @@
 
     <div class="player-grid">
 
-      <article class="player-card">
-        <img
-          src="assets/players/timothy-weah-hero.jpg"
-          alt="Timothy Weah"
-        />
+  <article class="player-card">
+    <img
+      src="assets/players/timothy-weah-hero.jpg"
+      alt="Timothy Weah"
+    />
 
-        <div class="player-info">
-          <small data-i18n="talent.players.timothyWeah.status">
-            USA International
-          </small>
+    <div class="player-info">
+      <small data-i18n="talent.players.timothyWeah.position">
+        Right Winger
+      </small>
 
-          <h3 data-i18n="talent.players.timothyWeah.name">
-            Timothy Weah
-          </h3>
+      <h3 data-i18n="talent.players.timothyWeah.name">
+        Timothy Weah
+      </h3>
 
-          <p data-i18n="talent.players.timothyWeah.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
+      <p class="player-club" data-i18n="talent.players.timothyWeah.club">
+        Olympique Marseille
+      </p>
 
+      <p class="player-league" data-i18n="talent.players.timothyWeah.league">
+        Ligue 1 · France
+      </p>
 
-      <article class="player-card">
-        <img
-          src="assets/players/mohamed-simakan-hero.jpg"
-          alt="Mohamed Simakan"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.mohamedSimakan.status">
-            Elite Defender
-          </small>
-
-          <h3 data-i18n="talent.players.mohamedSimakan.name">
-            Mohamed Simakan
-          </h3>
-
-          <p data-i18n="talent.players.mohamedSimakan.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
-
-      <article class="player-card">
-        <img
-          src="assets/players/castello-lukeba-hero.jpg"
-          alt="Castello Lukeba"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.castelloLukeba.status">
-            France International
-          </small>
-
-          <h3 data-i18n="talent.players.castelloLukeba.name">
-            Castello Lukeba
-          </h3>
-
-          <p data-i18n="talent.players.castelloLukeba.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
-      
-
-      <article class="player-card">
-        <img
-          src="assets/players/nicolas-pepe-hero.jpg"
-          alt="Nicolas Pépé"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.nicolasPepe.status">
-            Ivory Coast International
-          </small>
-
-          <h3 data-i18n="talent.players.nicolasPepe.name">
-            Nicolas Pépé
-          </h3>
-
-          <p data-i18n="talent.players.nicolasPepe.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
-
-
-      <article class="player-card">
-        <img
-          src="assets/players/loum-tchaouna-hero.jpg"
-          alt="Loum Tchaouna"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.loumTchaouna.status">
-            France U21
-          </small>
-
-          <h3 data-i18n="talent.players.loumTchaouna.name">
-            Loum Tchaouna
-          </h3>
-
-          <p data-i18n="talent.players.loumTchaouna.role">
-            Coventry City
-          </p>
-        </div>
-      </article>
-
-
-      <article class="player-card">
-        <img
-          src="assets/players/george-ilenikhena-hero.jpg"
-          alt="George Ilenikhena"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.georgeIlenikhena.status">
-            Forward
-          </small>
-
-          <h3 data-i18n="talent.players.georgeIlenikhena.name">
-            George Ilenikhena
-          </h3>
-
-          <p data-i18n="talent.players.georgeIlenikhena.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
-
-
-      <article class="player-card">
-        <img
-          src="assets/players/djeidi-gassama-hero.jpg"
-          alt="Djeidi Gassama"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.djeidiGassama.status">
-            Winger
-          </small>
-
-          <h3 data-i18n="talent.players.djeidiGassama.name">
-            Djeidi Gassama
-          </h3>
-
-          <p data-i18n="talent.players.djeidiGassama.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
-
-
-      <article class="player-card">
-        <img
-          src="assets/players/kevin-boma-hero.jpg"
-          alt="Kévin Boma"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.kevinBoma.status">
-            Defender
-          </small>
-
-          <h3 data-i18n="talent.players.kevinBoma.name">
-            Kévin Boma
-          </h3>
-
-          <p data-i18n="talent.players.kevinBoma.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
-
-
-      <article class="player-card">
-        <img
-          src="assets/players/idjessi-metsoko-hero.jpg"
-          alt="Idjessi Metsoko"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.idjessiMetsoko.status">
-            Togo International
-          </small>
-
-          <h3 data-i18n="talent.players.idjessiMetsoko.name">
-            Idjessi Metsoko
-          </h3>
-
-          <p data-i18n="talent.players.idjessiMetsoko.role">
-            Professional Footballer
-          </p>
-        </div>
-      </article>
-
-
-      <article class="player-card">
-        <img
-          src="assets/players/jordy-makengo-hero.jpg"
-          alt="Jordy Makengo"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.jordyMakengo.status">
-            Left Back
-          </small>
-
-          <h3 data-i18n="talent.players.jordyMakengo.name">
-            Jordy Makengo
-          </h3>
-
-          <p data-i18n="talent.players.jordyMakengo.role">
-            SC Freiburg
-          </p>
-        </div>
-      </article>
-
-            <article class="player-card">
-        <img
-          src="assets/players/nathanael-mbuku-hero.jpg"
-          alt="Nathanaël Mbuku"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.nathanaelMbuku.status">
-            DR Congo International
-          </small>
-
-          <h3 data-i18n="talent.players.nathanaelMbuku.name">
-            Nathanaël Mbuku
-          </h3>
-
-          <p data-i18n="talent.players.nathanaelMbuku.role">
-            Left Winger
-          </p>
-        </div>
-      </article>
-
-
-      <article class="player-card">
-        <img
-          src="assets/players/khalil-fayad-hero.jpg"
-          alt="Khalil Fayad"
-        />
-
-        <div class="player-info">
-          <small data-i18n="talent.players.khalilFayad.status">
-            Midfielder
-          </small>
-
-          <h3 data-i18n="talent.players.khalilFayad.name">
-            Khalil Fayad
-          </h3>
-
-          <p data-i18n="talent.players.khalilFayad.role">
-            Montpellier HSC
-          </p>
-        </div>
-      </article>
-
+      <p class="player-international" data-i18n="talent.players.timothyWeah.international">
+        USA International
+      </p>
     </div>
+  </article>
 
+
+  <article class="player-card">
+    <img
+      src="assets/players/mohamed-simakan-hero.jpg"
+      alt="Mohamed Simakan"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.mohamedSimakan.position">
+        Centre-Back
+      </small>
+
+      <h3 data-i18n="talent.players.mohamedSimakan.name">
+        Mohamed Simakan
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.mohamedSimakan.club">
+        Al-Nassr FC
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.mohamedSimakan.league">
+        Saudi Pro League · Saudi Arabia
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.mohamedSimakan.international"></p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/castello-lukeba-hero.jpg"
+      alt="Castello Lukeba"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.castelloLukeba.position">
+        Centre-Back
+      </small>
+
+      <h3 data-i18n="talent.players.castelloLukeba.name">
+        Castello Lukeba
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.castelloLukeba.club">
+        RB Leipzig
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.castelloLukeba.league">
+        Bundesliga · Germany
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.castelloLukeba.international">
+        France International
+      </p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/nicolas-pepe-hero.jpg"
+      alt="Nicolas Pépé"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.nicolasPepe.position">
+        Right Winger
+      </small>
+
+      <h3 data-i18n="talent.players.nicolasPepe.name">
+        Nicolas Pépé
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.nicolasPepe.club">
+        Villarreal CF
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.nicolasPepe.league">
+        LaLiga · Spain
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.nicolasPepe.international">
+        Ivory Coast International
+      </p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/loum-tchaouna-hero.jpg"
+      alt="Loum Tchaouna"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.loumTchaouna.position">
+        Right Winger
+      </small>
+
+      <h3 data-i18n="talent.players.loumTchaouna.name">
+        Loum Tchaouna
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.loumTchaouna.club">
+        Coventry City
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.loumTchaouna.league">
+        Premier League · England
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.loumTchaouna.international">
+        Former France U21 International
+      </p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/george-ilenikhena-hero.jpg"
+      alt="George Ilenikhena"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.georgeIlenikhena.position">
+        Centre-Forward
+      </small>
+
+      <h3 data-i18n="talent.players.georgeIlenikhena.name">
+        George Ilenikhena
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.georgeIlenikhena.club">
+        Al-Ittihad Club
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.georgeIlenikhena.league">
+        Saudi Pro League · Saudi Arabia
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.georgeIlenikhena.international"></p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/djeidi-gassama-hero.jpg"
+      alt="Djeidi Gassama"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.djeidiGassama.position">
+        Left Winger
+      </small>
+
+      <h3 data-i18n="talent.players.djeidiGassama.name">
+        Djeidi Gassama
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.djeidiGassama.club">
+        Rangers FC
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.djeidiGassama.league">
+        Scottish Premiership · Scotland
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.djeidiGassama.international">
+        Mauritania International
+      </p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/kevin-boma-hero.jpg"
+      alt="Kévin Boma"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.kevinBoma.position">
+        Centre-Back
+      </small>
+
+      <h3 data-i18n="talent.players.kevinBoma.name">
+        Kévin Boma
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.kevinBoma.club">
+        Red Bull Salzburg
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.kevinBoma.league">
+        Austrian Bundesliga · Austria
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.kevinBoma.international">
+        Togo International
+      </p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/idjessi-metsoko-hero.jpg"
+      alt="Idjessi Metsoko"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.idjessiMetsoko.position">
+        Centre-Forward
+      </small>
+
+      <h3 data-i18n="talent.players.idjessiMetsoko.name">
+        Idjessi Metsoko
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.idjessiMetsoko.club">
+        Dundee United FC
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.idjessiMetsoko.league">
+        Scottish Premiership · Scotland
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.idjessiMetsoko.international">
+        Togo International
+      </p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/jordy-makengo-hero.jpg"
+      alt="Jordy Makengo"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.jordyMakengo.position">
+        Left-Back
+      </small>
+
+      <h3 data-i18n="talent.players.jordyMakengo.name">
+        Jordy Makengo
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.jordyMakengo.club">
+        SC Freiburg
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.jordyMakengo.league">
+        Bundesliga · Germany
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.jordyMakengo.international"></p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/nathanael-mbuku-hero.jpg"
+      alt="Nathanaël Mbuku"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.nathanaelMbuku.position">
+        Left Winger
+      </small>
+
+      <h3 data-i18n="talent.players.nathanaelMbuku.name">
+        Nathanaël Mbuku
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.nathanaelMbuku.club">
+        FC Augsburg
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.nathanaelMbuku.league">
+        Bundesliga · Germany
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.nathanaelMbuku.international">
+        DR Congo International
+      </p>
+    </div>
+  </article>
+
+
+  <article class="player-card">
+    <img
+      src="assets/players/khalil-fayad-hero.jpg"
+      alt="Khalil Fayad"
+    />
+
+    <div class="player-info">
+      <small data-i18n="talent.players.khalilFayad.position">
+        Central Midfield
+      </small>
+
+      <h3 data-i18n="talent.players.khalilFayad.name">
+        Khalil Fayad
+      </h3>
+
+      <p class="player-club" data-i18n="talent.players.khalilFayad.club">
+        Montpellier HSC
+      </p>
+
+      <p class="player-league" data-i18n="talent.players.khalilFayad.league">
+        Ligue 2 · France
+      </p>
+
+      <p class="player-international" data-i18n="talent.players.khalilFayad.international"></p>
+    </div>
+  </article>
+
+</div>
   </div>
 
 </section>
