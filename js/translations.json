@@ -1,0 +1,400 @@
+{
+  "en": {
+    "meta": {
+      "title": "BS Group International | Elite Football Representation",
+      "description": "BS Group International provides elite football representation, international career management, transfer strategy, contract negotiation and commercial development."
+    },
+
+    "nav": {
+      "talent": "Talent",
+      "about": "About",
+      "contact": "Contact"
+    },
+
+    "intro": {
+      "brandLine1": "BS GROUP",
+      "brandLine2": "INTERNATIONAL",
+      "tagline": "Talent. Strategy. Legacy.",
+      "enter": "Enter"
+    },
+
+    "hero": {
+      "eyebrow": "Elite Football Representation",
+      "brandLine1": "BS GROUP",
+      "brandLine2": "INTERNATIONAL",
+      "tagline": "Talent. Strategy. Legacy.",
+      "description": "International football representation and career management for professional players competing across the world's leading football markets.",
+      "talentButton": "Discover Our Talent",
+      "contactButton": "Contact BS Group"
+    },
+
+    "talent": {
+      "eyebrow": "Represented Talent",
+      "title": "Careers built for the highest level.",
+      "description": "BS Group International represents professional footballers through strategic career management, international transfers, negotiation and long-term professional development.",
+
+      "players": {
+        "timothyWeah": {
+          "name": "Timothy Weah",
+          "status": "USA International",
+          "role": "Professional Footballer"
+        },
+        "mohamedSimakan": {
+          "name": "Mohamed Simakan",
+          "status": "Elite Defender",
+          "role": "Professional Footballer"
+        },
+        "nicolasPepe": {
+          "name": "Nicolas Pépé",
+          "status": "Ivory Coast International",
+          "role": "Professional Footballer"
+        },
+        "loumTchaouna": {
+          "name": "Loum Tchaouna",
+          "status": "France U21",
+          "role": "Coventry City"
+        },
+        "georgeIlenikhena": {
+          "name": "George Ilenikhena",
+          "status": "Forward",
+          "role": "Professional Footballer"
+        },
+        "djeidiGassama": {
+          "name": "Djeidi Gassama",
+          "status": "Winger",
+          "role": "Professional Footballer"
+        },
+        "kevinBoma": {
+          "name": "Kévin Boma",
+          "status": "Defender",
+          "role": "Professional Footballer"
+        },
+        "idjessiMetsoko": {
+          "name": "Idjessi Metsoko",
+          "status": "Togo International",
+          "role": "Professional Footballer"
+        },
+        "jordyMakengo": {
+          "name": "Jordy Makengo",
+          "status": "Left Back",
+          "role": "SC Freiburg"
+        }
+      }
+    },
+
+    "international": {
+      "eyebrow": "International Presence",
+      "title": "Connected across the football world.",
+      "description": "BS Group International operates through an extensive network of clubs, sporting professionals and international markets, supporting players throughout every stage of their professional careers.",
+
+      "europe": {
+        "title": "Europe",
+        "text": "Major European football markets"
+      },
+      "uk": {
+        "title": "United Kingdom",
+        "text": "Premier professional football network"
+      },
+      "africa": {
+        "title": "Africa",
+        "text": "International talent and national teams"
+      },
+      "middleEast": {
+        "title": "Middle East",
+        "text": "Strategic football opportunities"
+      }
+    },
+
+    "about": {
+      "eyebrow": "About BS Group",
+      "text": "BS Group International provides professional footballers with strategic representation built around sporting ambition, negotiation expertise, international opportunity and long-term career development."
+    },
+
+    "coming": {
+      "title": "THE NEW BS GROUP INTERNATIONAL EXPERIENCE IS COMING.",
+      "subtitle": "New digital platform currently in development"
+    },
+
+    "contact": {
+      "eyebrow": "Private Representation Enquiries",
+      "title": "Let's talk football.",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "linkedin": "LinkedIn"
+    },
+
+    "footer": {
+      "copyright": "© 2026 BS Group International. All rights reserved.",
+      "company": "BS Group Entertainment Sports LLC",
+      "privacy": "Privacy",
+      "legal": "Legal",
+      "contact": "Contact"
+    }
+  },
+
+  "fr": {
+    "meta": {
+      "title": "BS Group International | Représentation de Footballeurs",
+      "description": "BS Group International accompagne des footballeurs professionnels dans leur représentation, leur carrière internationale, leurs transferts, leurs négociations contractuelles et leur développement commercial."
+    },
+
+    "nav": {
+      "talent": "Joueurs",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+
+    "intro": {
+      "brandLine1": "BS GROUP",
+      "brandLine2": "INTERNATIONAL",
+      "tagline": "Talent. Stratégie. Héritage.",
+      "enter": "Entrer"
+    },
+
+    "hero": {
+      "eyebrow": "Représentation de Footballeurs",
+      "brandLine1": "BS GROUP",
+      "brandLine2": "INTERNATIONAL",
+      "tagline": "Talent. Stratégie. Héritage.",
+      "description": "Représentation internationale et gestion de carrière pour des footballeurs professionnels évoluant sur les principaux marchés du football mondial.",
+      "talentButton": "Découvrir nos joueurs",
+      "contactButton": "Contacter BS Group"
+    },
+
+    "talent": {
+      "eyebrow": "Nos Joueurs",
+      "title": "Des carrières construites pour le plus haut niveau.",
+      "description": "BS Group International représente des footballeurs professionnels à travers une gestion stratégique de carrière, des transferts internationaux, la négociation et un accompagnement professionnel à long terme.",
+
+      "players": {
+        "timothyWeah": {
+          "name": "Timothy Weah",
+          "status": "International américain",
+          "role": "Footballeur professionnel"
+        },
+        "mohamedSimakan": {
+          "name": "Mohamed Simakan",
+          "status": "Défenseur",
+          "role": "Footballeur professionnel"
+        },
+        "nicolasPepe": {
+          "name": "Nicolas Pépé",
+          "status": "International ivoirien",
+          "role": "Footballeur professionnel"
+        },
+        "loumTchaouna": {
+          "name": "Loum Tchaouna",
+          "status": "International France Espoirs",
+          "role": "Coventry City"
+        },
+        "georgeIlenikhena": {
+          "name": "George Ilenikhena",
+          "status": "Attaquant",
+          "role": "Footballeur professionnel"
+        },
+        "djeidiGassama": {
+          "name": "Djeidi Gassama",
+          "status": "Ailier",
+          "role": "Footballeur professionnel"
+        },
+        "kevinBoma": {
+          "name": "Kévin Boma",
+          "status": "Défenseur",
+          "role": "Footballeur professionnel"
+        },
+        "idjessiMetsoko": {
+          "name": "Idjessi Metsoko",
+          "status": "International togolais",
+          "role": "Footballeur professionnel"
+        },
+        "jordyMakengo": {
+          "name": "Jordy Makengo",
+          "status": "Arrière gauche",
+          "role": "SC Freiburg"
+        }
+      }
+    },
+
+    "international": {
+      "eyebrow": "Présence Internationale",
+      "title": "Connectés au monde du football.",
+      "description": "BS Group International s'appuie sur un vaste réseau de clubs, de professionnels du sport et de marchés internationaux afin d'accompagner les joueurs à chaque étape de leur carrière.",
+
+      "europe": {
+        "title": "Europe",
+        "text": "Principaux marchés du football européen"
+      },
+      "uk": {
+        "title": "Royaume-Uni",
+        "text": "Réseau du football professionnel britannique"
+      },
+      "africa": {
+        "title": "Afrique",
+        "text": "Talents internationaux et sélections nationales"
+      },
+      "middleEast": {
+        "title": "Moyen-Orient",
+        "text": "Opportunités stratégiques dans le football"
+      }
+    },
+
+    "about": {
+      "eyebrow": "À propos de BS Group",
+      "text": "BS Group International offre aux footballeurs professionnels une représentation stratégique fondée sur l'ambition sportive, l'expertise en négociation, les opportunités internationales et le développement de carrière à long terme."
+    },
+
+    "coming": {
+      "title": "LA NOUVELLE EXPÉRIENCE BS GROUP INTERNATIONAL ARRIVE BIENTÔT.",
+      "subtitle": "Notre nouvelle plateforme digitale est actuellement en développement"
+    },
+
+    "contact": {
+      "eyebrow": "Demandes de Représentation",
+      "title": "Parlons football.",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "linkedin": "LinkedIn"
+    },
+
+    "footer": {
+      "copyright": "© 2026 BS Group International. Tous droits réservés.",
+      "company": "BS Group Entertainment Sports LLC",
+      "privacy": "Confidentialité",
+      "legal": "Mentions légales",
+      "contact": "Contact"
+    }
+  },
+
+  "es": {
+    "meta": {
+      "title": "BS Group International | Representación de Futbolistas",
+      "description": "BS Group International ofrece representación de futbolistas profesionales, gestión internacional de carrera, estrategia de transferencias, negociación contractual y desarrollo comercial."
+    },
+
+    "nav": {
+      "talent": "Jugadores",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+
+    "intro": {
+      "brandLine1": "BS GROUP",
+      "brandLine2": "INTERNATIONAL",
+      "tagline": "Talento. Estrategia. Legado.",
+      "enter": "Entrar"
+    },
+
+    "hero": {
+      "eyebrow": "Representación de Futbolistas",
+      "brandLine1": "BS GROUP",
+      "brandLine2": "INTERNATIONAL",
+      "tagline": "Talento. Estrategia. Legado.",
+      "description": "Representación internacional y gestión de carrera para futbolistas profesionales que compiten en los principales mercados del fútbol mundial.",
+      "talentButton": "Descubre nuestros jugadores",
+      "contactButton": "Contactar con BS Group"
+    },
+
+    "talent": {
+      "eyebrow": "Talento Representado",
+      "title": "Carreras construidas para el más alto nivel.",
+      "description": "BS Group International representa a futbolistas profesionales mediante gestión estratégica de carrera, transferencias internacionales, negociación y desarrollo profesional a largo plazo.",
+
+      "players": {
+        "timothyWeah": {
+          "name": "Timothy Weah",
+          "status": "Internacional con Estados Unidos",
+          "role": "Futbolista profesional"
+        },
+        "mohamedSimakan": {
+          "name": "Mohamed Simakan",
+          "status": "Defensa",
+          "role": "Futbolista profesional"
+        },
+        "nicolasPepe": {
+          "name": "Nicolas Pépé",
+          "status": "Internacional con Costa de Marfil",
+          "role": "Futbolista profesional"
+        },
+        "loumTchaouna": {
+          "name": "Loum Tchaouna",
+          "status": "Internacional Sub-21 con Francia",
+          "role": "Coventry City"
+        },
+        "georgeIlenikhena": {
+          "name": "George Ilenikhena",
+          "status": "Delantero",
+          "role": "Futbolista profesional"
+        },
+        "djeidiGassama": {
+          "name": "Djeidi Gassama",
+          "status": "Extremo",
+          "role": "Futbolista profesional"
+        },
+        "kevinBoma": {
+          "name": "Kévin Boma",
+          "status": "Defensa",
+          "role": "Futbolista profesional"
+        },
+        "idjessiMetsoko": {
+          "name": "Idjessi Metsoko",
+          "status": "Internacional con Togo",
+          "role": "Futbolista profesional"
+        },
+        "jordyMakengo": {
+          "name": "Jordy Makengo",
+          "status": "Lateral izquierdo",
+          "role": "SC Freiburg"
+        }
+      }
+    },
+
+    "international": {
+      "eyebrow": "Presencia Internacional",
+      "title": "Conectados con el mundo del fútbol.",
+      "description": "BS Group International opera a través de una amplia red de clubes, profesionales del deporte y mercados internacionales, acompañando a los jugadores durante cada etapa de sus carreras profesionales.",
+
+      "europe": {
+        "title": "Europa",
+        "text": "Principales mercados del fútbol europeo"
+      },
+      "uk": {
+        "title": "Reino Unido",
+        "text": "Red de fútbol profesional británico"
+      },
+      "africa": {
+        "title": "África",
+        "text": "Talento internacional y selecciones nacionales"
+      },
+      "middleEast": {
+        "title": "Oriente Medio",
+        "text": "Oportunidades estratégicas en el fútbol"
+      }
+    },
+
+    "about": {
+      "eyebrow": "Sobre BS Group",
+      "text": "BS Group International ofrece a futbolistas profesionales una representación estratégica basada en la ambición deportiva, la experiencia en negociación, las oportunidades internacionales y el desarrollo de carrera a largo plazo."
+    },
+
+    "coming": {
+      "title": "LA NUEVA EXPERIENCIA BS GROUP INTERNATIONAL LLEGA PRONTO.",
+      "subtitle": "Nuestra nueva plataforma digital se encuentra actualmente en desarrollo"
+    },
+
+    "contact": {
+      "eyebrow": "Consultas de Representación",
+      "title": "Hablemos de fútbol.",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "linkedin": "LinkedIn"
+    },
+
+    "footer": {
+      "copyright": "© 2026 BS Group International. Todos los derechos reservados.",
+      "company": "BS Group Entertainment Sports LLC",
+      "privacy": "Privacidad",
+      "legal": "Aviso legal",
+      "contact": "Contacto"
+    }
+  }
+}
