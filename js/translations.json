@@ -85,9 +85,19 @@
           "name": "Jordy Makengo",
           "status": "Left Back",
           "role": "SC Freiburg"
-        }
+        },
+              "nathanaelMbuku": {
+        "name": "Nathanaël Mbuku",
+        "status": "DR Congo International",
+        "role": "Left Winger"
+      },
+      "khalilFayad": {
+        "name": "Khalil Fayad",
+        "status": "Midfielder",
+        "role": "Montpellier HSC"
       }
-    },
+            }
+          },
 
     "international": {
       "eyebrow": "International Presence",
@@ -225,7 +235,17 @@
           "name": "Jordy Makengo",
           "status": "Arrière gauche",
           "role": "SC Freiburg"
-        }
+        },
+        "nathanaelMbuku": {
+  "name": "Nathanaël Mbuku",
+  "status": "International congolais",
+  "role": "Ailier gauche"
+},
+"khalilFayad": {
+  "name": "Khalil Fayad",
+  "status": "Milieu de terrain",
+  "role": "Montpellier HSC"
+}
       }
     },
 
@@ -365,7 +385,17 @@
           "name": "Jordy Makengo",
           "status": "Lateral izquierdo",
           "role": "SC Freiburg"
-        }
+        },
+        "nathanaelMbuku": {
+  "name": "Nathanaël Mbuku",
+  "status": "Internacional con RD del Congo",
+  "role": "Extremo izquierdo"
+},
+"khalilFayad": {
+  "name": "Khalil Fayad",
+  "status": "Centrocampista",
+  "role": "Montpellier HSC"
+}
       }
     },
 
