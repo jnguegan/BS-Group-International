@@ -7,545 +7,1482 @@
   <title>BS Group International | Elite Football Representation</title>
 
   <meta
+    id="metaDescription"
     name="description"
-    content="BS Group International provides elite football representation, player career management, transfer strategy, contract negotiation and commercial development across international markets."
+    content="BS Group International provides elite football representation, international career management, transfer strategy, contract negotiation and commercial development."
   />
 
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <meta name="theme-color" content="#050505" />
 
-  <link rel="stylesheet" href="css/styles.css" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/branding/bs-group-international-favicon.png"
+  />
 
-  <script src="js/i18n.js" defer></script>
+  <style>
+    :root {
+      --black: #050505;
+      --black-soft: #0b0b0b;
+      --card: #101010;
+      --gold: #d4af37;
+      --gold-light: #e5c85d;
+      --ivory: #f5f0e6;
+      --grey: #aaa69e;
+      --border: rgba(212, 175, 55, 0.22);
+      --max: 1280px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: #fff;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    img,
+    video {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    .gold {
+      color: var(--gold);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.74rem;
+      font-weight: 700;
+    }
+
+    /* ===========================
+       CINEMATIC INTRO
+    =========================== */
+
+    #intro {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: opacity 0.9s ease, visibility 0.9s ease;
+    }
+
+    #intro.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .intro-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.38;
+      filter: contrast(115%) saturate(80%);
+    }
+
+    .intro-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at center, rgba(0,0,0,0.05), rgba(0,0,0,0.75)),
+        linear-gradient(to bottom, rgba(0,0,0,0.15), #000);
+    }
+
+    .intro-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      width: min(90%, 900px);
+      animation: reveal 1.5s ease both;
+    }
+
+    .intro-logo {
+      width: min(280px, 65vw);
+      margin: 0 auto 2rem;
+      filter: drop-shadow(0 0 30px rgba(212,175,55,0.18));
+    }
+
+    .intro-title {
+      font-size: clamp(2.7rem, 8vw, 7rem);
+      line-height: 0.88;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+    }
+
+    .intro-tagline {
+      margin-top: 1.6rem;
+      color: var(--ivory);
+      text-transform: uppercase;
+      letter-spacing: 0.32em;
+      font-size: clamp(0.68rem, 1.5vw, 0.92rem);
+    }
+
+    #skipIntro {
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+      z-index: 5;
+      background: none;
+      border: 0;
+      color: #aaa;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.68rem;
+    }
+
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===========================
+       HEADER
+    =========================== */
+
+    header {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: 0.3s ease;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.82), transparent);
+    }
+
+    header.scrolled {
+      background: rgba(4,4,4,0.93);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo img {
+      width: 135px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      align-items: center;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .languages {
+      display: flex;
+      gap: 0.45rem;
+    }
+
+    .languages button {
+      border: 0;
+      background: none;
+      color: #888;
+      cursor: pointer;
+      padding: 0.35rem 0.25rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .languages button:hover,
+    .languages button.active {
+      color: var(--gold);
+    }
+
+    /* ===========================
+       HERO
+    =========================== */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          to right,
+          rgba(0,0,0,0.92) 5%,
+          rgba(0,0,0,0.45) 55%,
+          rgba(0,0,0,0.38)
+        ),
+        linear-gradient(to top, #050505 0%, transparent 45%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding-bottom: 8rem;
+      max-width: 950px;
+    }
+
+    .hero h1 {
+      margin-top: 1rem;
+      font-size: clamp(3.2rem, 8vw, 7.4rem);
+      line-height: 0.87;
+      letter-spacing: -0.06em;
+    }
+
+    .hero h2 {
+      color: var(--gold);
+      margin-top: 1.2rem;
+      font-size: clamp(1.3rem, 3vw, 2.4rem);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-description {
+      max-width: 690px;
+      margin-top: 1.5rem;
+      color: #ccc7be;
+      font-size: 1.05rem;
+    }
+
+    .hero-actions {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 0 1.5rem;
+      border: 1px solid var(--gold);
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      transition: 0.25s;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #080808;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+    }
+
+    .btn-outline:hover {
+      background: rgba(212,175,55,0.1);
+    }
+
+    /* ===========================
+       GENERAL SECTIONS
+    =========================== */
+
+    section {
+      padding: 7rem 0;
+    }
+
+    .section-heading {
+      max-width: 830px;
+      margin-bottom: 3.3rem;
+    }
+
+    .section-heading h2,
+    .section-title {
+      margin-top: 0.9rem;
+      font-size: clamp(2.3rem, 5.5vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.045em;
+    }
+
+    .section-heading p:last-child,
+    .section-copy {
+      margin-top: 1.3rem;
+      color: var(--grey);
+      max-width: 700px;
+    }
+
+    /* ===========================
+       TALENT
+    =========================== */
+
+    .talent {
+      background: var(--black-soft);
+    }
+
+    .player-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .player-card {
+      position: relative;
+      height: 510px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .player-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+      filter: saturate(0.9);
+    }
+
+    .player-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .player-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.98) 0%,
+        rgba(0,0,0,0.45) 42%,
+        transparent 72%
+      );
+    }
+
+    .player-info {
+      position: absolute;
+      z-index: 2;
+      left: 1.7rem;
+      right: 1.7rem;
+      bottom: 1.7rem;
+    }
+
+    .player-info small {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.68rem;
+    }
+
+    .player-info h3 {
+      font-size: 1.7rem;
+      margin-top: 0.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    .player-info p {
+      color: #bcb7ae;
+      margin-top: 0.25rem;
+      font-size: 0.9rem;
+    }
+
+    /* ===========================
+       INTERNATIONAL
+    =========================== */
+
+    .international-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .territories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .territory {
+      padding: 2rem;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.015);
+    }
+
+    .territory strong {
+      display: block;
+      color: var(--gold);
+      font-size: 1.4rem;
+    }
+
+    .territory span {
+      display: block;
+      margin-top: 0.4rem;
+      color: var(--grey);
+      font-size: 0.84rem;
+    }
+
+    /* ===========================
+       ABOUT
+    =========================== */
+
+    .about {
+      background:
+        radial-gradient(
+          circle at 75% 50%,
+          rgba(212,175,55,0.09),
+          transparent 40%
+        ),
+        #080808;
+    }
+
+    .about-inner {
+      max-width: 980px;
+    }
+
+    .about-text {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      line-height: 1.35;
+      color: var(--ivory);
+      margin-top: 1.5rem;
+    }
+
+    /* ===========================
+       COMING SOON
+    =========================== */
+
+    .coming {
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: #030303;
+    }
+
+    .coming h2 {
+      font-size: clamp(2rem, 5vw, 4.5rem);
+      letter-spacing: -0.04em;
+    }
+
+    .coming p {
+      color: var(--gold);
+      margin-top: 1rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+    }
+
+    /* ===========================
+       CONTACT
+    =========================== */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 5rem;
+    }
+
+    .contact h2 {
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      line-height: 0.95;
+      margin-top: 0.8rem;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .contact-details a {
+      font-size: 1.1rem;
+      color: var(--ivory);
+    }
+
+    .contact-details a:hover {
+      color: var(--gold);
+    }
+
+    .socials {
+      margin-top: 1.3rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      font-size: 0.72rem;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 3rem 0;
+      color: #888;
+      font-size: 0.78rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: flex-end;
+    }
+
+    .footer-logo {
+      width: 135px;
+      margin-bottom: 1rem;
+    }
+
+    .footer-company {
+      color: #aaa;
+      margin-top: 0.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.3rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    /* ===========================
+       MOBILE
+    =========================== */
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+
+      .player-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .international-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .footer-inner {
+        display: block;
+      }
+
+      .footer-links {
+        margin-top: 1.5rem;
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        height: 74px;
+      }
+
+      .nav-logo img {
+        width: 112px;
+      }
+
+      .hero-content {
+        padding-bottom: 5rem;
+      }
+
+      section {
+        padding: 5rem 0;
+      }
+
+      .player-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .player-card {
+        height: 500px;
+      }
+
+      .territories {
+        grid-template-columns: 1fr;
+      }
+
+      #skipIntro {
+        right: 1rem;
+        bottom: 1.2rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+<!-- ===========================
+     CINEMATIC INTRO
+=========================== -->
 
-  <header class="site-header">
-    <div class="container nav-container">
+<div id="intro">
 
-      <a href="index.html" class="brand">
-        <img src="assets/logo-main.png" alt="BS Group International" />
-      </a>
+  <video
+    class="intro-video"
+    autoplay
+    muted
+    playsinline
+    id="introVideo"
+  >
+    <source
+      src="assets/video/bs-group-opening.mp4"
+      type="video/mp4"
+    />
+  </video>
 
-      <nav class="desktop-nav">
-        <a href="index.html" data-i18n="nav.home">Home</a>
-        <a href="players.html" data-i18n="nav.players">Players</a>
-        <a href="services.html" data-i18n="nav.services">Services</a>
-        <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
-        <a href="about.html" data-i18n="nav.about">About</a>
+  <div class="intro-overlay"></div>
 
-        <a
-          href="contact.html"
-          class="nav-cta"
-          data-i18n="nav.contact"
-        >
-          Contact
-        </a>
+  <div class="intro-content">
 
-        <div class="lang-switcher">
-          <button onclick="setLanguage('en')">EN</button>
-          <button onclick="setLanguage('fr')">FR</button>
-          <button onclick="setLanguage('es')">ES</button>
-        </div>
+    <img
+      src="assets/branding/bs-group-international-logo-gold.png"
+      alt="BS Group International"
+      class="intro-logo"
+    />
+
+    <h1 class="intro-title">
+      <span data-i18n="intro.brandLine1">BS GROUP</span><br />
+      <span class="gold" data-i18n="intro.brandLine2">INTERNATIONAL</span>
+    </h1>
+
+    <p
+      class="intro-tagline"
+      data-i18n="intro.tagline"
+    >
+      Talent. Strategy. Legacy.
+    </p>
+
+  </div>
+
+  <button
+    id="skipIntro"
+    type="button"
+    data-i18n="intro.enter"
+  >
+    Enter
+  </button>
+
+</div>
+
+
+<!-- ===========================
+     HEADER
+=========================== -->
+
+<header id="header">
+
+  <div class="container nav">
+
+    <a href="#top" class="nav-logo">
+      <img
+        src="assets/branding/bs-group-international-logo-gold.png"
+        alt="BS Group International"
+      />
+    </a>
+
+    <div class="nav-right">
+
+      <nav class="nav-links">
+        <a href="#talent" data-i18n="nav.talent">Talent</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
 
-      <button class="mobile-menu-btn" id="mobileMenuBtn">
-        Menu
-      </button>
+      <div class="languages">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
 
     </div>
 
-    <div class="mobile-nav" id="mobileNav">
-      <a href="index.html" data-i18n="nav.home">Home</a>
-      <a href="players.html" data-i18n="nav.players">Players</a>
-      <a href="services.html" data-i18n="nav.services">Services</a>
-      <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
-      <a href="about.html" data-i18n="nav.about">About</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  </div>
 
-      <div class="mobile-lang-switcher">
-        <button onclick="setLanguage('en')">EN</button>
-        <button onclick="setLanguage('fr')">FR</button>
-        <button onclick="setLanguage('es')">ES</button>
-      </div>
+</header>
+
+
+<!-- ===========================
+     HERO
+=========================== -->
+
+<main id="top">
+
+<section class="hero">
+
+  <img
+    src="assets/backgrounds/bs-group-hero.jpg"
+    alt="Elite international football"
+    class="hero-image"
+  />
+
+  <div class="container hero-content">
+
+    <p
+      class="eyebrow"
+      data-i18n="hero.eyebrow"
+    >
+      Elite Football Representation
+    </p>
+
+    <h1>
+      <span data-i18n="hero.brandLine1">BS GROUP</span><br />
+      <span data-i18n="hero.brandLine2">INTERNATIONAL</span>
+    </h1>
+
+    <h2 data-i18n="hero.tagline">
+      Talent. Strategy. Legacy.
+    </h2>
+
+    <p
+      class="hero-description"
+      data-i18n="hero.description"
+    >
+      International football representation and career management
+      for professional players competing across the world's leading
+      football markets.
+    </p>
+
+    <div class="hero-actions">
+
+      <a
+        href="#talent"
+        class="btn btn-gold"
+        data-i18n="hero.talentButton"
+      >
+        Discover Our Talent
+      </a>
+
+      <a
+        href="#contact"
+        class="btn btn-outline"
+        data-i18n="hero.contactButton"
+      >
+        Contact BS Group
+      </a>
+
     </div>
-  </header>
 
-  <!-- MAIN -->
+  </div>
 
-  <main>
+</section>
 
-    <!-- HERO -->
 
-    <section class="hero">
-      <div class="hero-overlay"></div>
+<!-- ===========================
+     FEATURED TALENT
+=========================== -->
 
-      <div class="container hero-content">
+<section class="talent" id="talent">
 
-        <p
-          class="eyebrow"
-          data-i18n="hero.eyebrow"
-        >
-          Elite Football Representation
-        </p>
+  <div class="container">
 
-        <h1 data-i18n="hero.title">
-          Global Career Management for Professional Footballers.
-        </h1>
+    <div class="section-heading">
 
-        <p
-          class="hero-text"
-          data-i18n="hero.text"
-        >
-          BS Group International represents elite football talent through strategic transfers,
-          contract negotiation, legal expertise, commercial growth and long-term career planning
-          across international markets.
-        </p>
+      <p class="eyebrow" data-i18n="talent.eyebrow">
+        Represented Talent
+      </p>
 
-        <div class="hero-actions">
-          <a
-            href="players.html"
-            class="btn btn-primary"
-            data-i18n="hero.primaryBtn"
-          >
-            View Players
-          </a>
+      <h2 data-i18n="talent.title">
+        Careers built for the highest level.
+      </h2>
 
-          <a
-            href="contact.html"
-            class="btn btn-secondary"
-            data-i18n="hero.secondaryBtn"
-          >
-            Contact Our Team
-          </a>
-        </div>
+      <p data-i18n="talent.description">
+        BS Group International represents professional footballers
+        through strategic career management, international transfers,
+        negotiation and long-term professional development.
+      </p>
 
-        <div class="hero-trust">
-          <span data-i18n="hero.trust1">
-            FIFA Regulatory Expertise
-          </span>
+    </div>
 
-          <span data-i18n="hero.trust2">
-            International Transfers
-          </span>
+    <div class="player-grid">
 
-          <span data-i18n="hero.trust3">
-            Player Career Strategy
-          </span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CREDIBILITY -->
-
-    <section class="credibility">
-      <div class="container credibility-grid">
-
-        <div>
-          <strong data-i18n="credibility.item1Title">
-            Global
-          </strong>
-
-          <span data-i18n="credibility.item1Text">
-            Football Network
-          </span>
-        </div>
-
-        <div>
-          <strong data-i18n="credibility.item2Title">
-            Elite
-          </strong>
-
-          <span data-i18n="credibility.item2Text">
-            Player Representation
-          </span>
-        </div>
-
-        <div>
-          <strong data-i18n="credibility.item3Title">
-            Strategic
-          </strong>
-
-          <span data-i18n="credibility.item3Text">
-            Transfer Management
-          </span>
-        </div>
-
-        <div>
-          <strong data-i18n="credibility.item4Title">
-            Premium
-          </strong>
-
-          <span data-i18n="credibility.item4Text">
-            Commercial Development
-          </span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PLAYERS -->
-
-    <section class="section featured">
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p
-            class="eyebrow"
-            data-i18n="players.eyebrow"
-          >
-            Represented Talent
-          </p>
-
-          <h2 data-i18n="players.title">
-            Managing careers at the highest level of the game.
-          </h2>
-
-          <p data-i18n="players.text">
-            From emerging talent to established professionals, BS Group International provides
-            strategic representation built around career longevity, market positioning and trust.
-          </p>
-
-        </div>
-
-        <div class="player-grid">
-
-          <article class="player-card">
-            <img
-              src="assets/player-placeholder.jpg"
-              alt="Featured football player"
-            />
-
-            <div>
-              <span data-i18n="players.card1Role">Forward</span>
-
-              <h3 data-i18n="players.card1Name">
-                Featured Player
-              </h3>
-
-              <p data-i18n="players.card1League">
-                International Market
-              </p>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <img
-              src="assets/player-placeholder.jpg"
-              alt="Featured football player"
-            />
-
-            <div>
-              <span data-i18n="players.card2Role">Defender</span>
-
-              <h3 data-i18n="players.card2Name">
-                Featured Player
-              </h3>
-
-              <p data-i18n="players.card2League">
-                European Football
-              </p>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <img
-              src="assets/player-placeholder.jpg"
-              alt="Featured football player"
-            />
-
-            <div>
-              <span data-i18n="players.card3Role">Midfielder</span>
-
-              <h3 data-i18n="players.card3Name">
-                Featured Player
-              </h3>
-
-              <p data-i18n="players.card3League">
-                Professional League
-              </p>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="center-action">
-          <a
-            href="players.html"
-            class="text-link"
-            data-i18n="players.link"
-          >
-            Explore player portfolio
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-
-    <section class="section services">
-      <div class="container">
-
-        <div class="section-heading narrow">
-
-          <p
-            class="eyebrow"
-            data-i18n="services.eyebrow"
-          >
-            Agency Services
-          </p>
-
-          <h2 data-i18n="services.title">
-            Complete football management for modern professionals.
-          </h2>
-
-        </div>
-
-        <div class="services-grid">
-
-          <article class="service-card">
-            <span>01</span>
-
-            <h3 data-i18n="services.s1Title">
-              Player Representation
-            </h3>
-
-            <p data-i18n="services.s1Text">
-              Contract strategy, club negotiations, career planning and international market positioning.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span>02</span>
-
-            <h3 data-i18n="services.s2Title">
-              Transfers & Club Strategy
-            </h3>
-
-            <p data-i18n="services.s2Text">
-              Managing opportunities, club relationships and strategic moves aligned with player development.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span>03</span>
-
-            <h3 data-i18n="services.s3Title">
-              Legal & Regulatory
-            </h3>
-
-            <p data-i18n="services.s3Text">
-              Football contract support, FIFA regulatory guidance and coordination with specialist advisors.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span>04</span>
-
-            <h3 data-i18n="services.s4Title">
-              Commercial Growth
-            </h3>
-
-            <p data-i18n="services.s4Text">
-              Brand partnerships, sponsorship opportunities, endorsements and image-rights strategy.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span>05</span>
-
-            <h3 data-i18n="services.s5Title">
-              Media & Reputation
-            </h3>
-
-            <p data-i18n="services.s5Text">
-              Public profile management, communication strategy, press positioning and digital presence.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span>06</span>
-
-            <h3 data-i18n="services.s6Title">
-              Lifestyle & Relocation
-            </h3>
-
-            <p data-i18n="services.s6Text">
-              Concierge-level support for relocation, family transition, travel and player wellbeing.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- TRANSFERS -->
-
-    <section class="section transfer-section">
-      <div class="container transfer-card">
-
-        <div>
-
-          <p
-            class="eyebrow"
-            data-i18n="transfer.eyebrow"
-          >
-            Transfer Market Intelligence
-          </p>
-
-          <h2 data-i18n="transfer.title">
-            Strategic moves. Long-term careers. Global opportunities.
-          </h2>
-
-          <p data-i18n="transfer.text">
-            We support players through every stage of the transfer process,
-            from opportunity analysis and club alignment to negotiation,
-            contract execution and post-move integration.
-          </p>
-
-        </div>
-
-        <a
-          href="transfers.html"
-          class="btn btn-primary"
-          data-i18n="transfer.button"
-        >
-          View Transfer Activity
-        </a>
-
-      </div>
-    </section>
-
-    <!-- NETWORK -->
-
-    <section class="section network">
-      <div class="container network-grid">
-
-        <div>
-
-          <p
-            class="eyebrow"
-            data-i18n="network.eyebrow"
-          >
-            Global Network
-          </p>
-
-          <h2 data-i18n="network.title">
-            Connected across the football world.
-          </h2>
-
-        </div>
-
-        <div class="network-list">
-          <span data-i18n="network.europe">Europe</span>
-          <span data-i18n="network.uk">United Kingdom</span>
-          <span data-i18n="network.middleEast">Middle East</span>
-          <span data-i18n="network.africa">Africa</span>
-          <span data-i18n="network.global">International Markets</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-
-    <section class="final-cta">
-      <div class="container final-cta-inner">
-
-        <p
-          class="eyebrow"
-          data-i18n="cta.eyebrow"
-        >
-          Private Representation Enquiries
-        </p>
-
-        <h2 data-i18n="cta.title">
-          Building careers with strategy, discretion and ambition.
-        </h2>
-
-        <a
-          href="contact.html"
-          class="btn btn-primary"
-          data-i18n="cta.button"
-        >
-          Speak to BS Group International
-        </a>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-
-  <footer class="site-footer">
-
-    <div class="container footer-grid">
-
-      <div>
+      <article class="player-card">
         <img
-          src="assets/logo-light.png"
-          alt="BS Group International"
-          class="footer-logo"
+          src="assets/players/timothy-weah-hero.jpg"
+          alt="Timothy Weah"
         />
 
-        <p data-i18n="footer.text">
-          Elite football representation, career management and international sports advisory.
-        </p>
+        <div class="player-info">
+          <small data-i18n="talent.players.timothyWeah.status">
+            USA International
+          </small>
+
+          <h3 data-i18n="talent.players.timothyWeah.name">
+            Timothy Weah
+          </h3>
+
+          <p data-i18n="talent.players.timothyWeah.role">
+            Professional Footballer
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/mohamed-simakan-hero.jpg"
+          alt="Mohamed Simakan"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.mohamedSimakan.status">
+            Elite Defender
+          </small>
+
+          <h3 data-i18n="talent.players.mohamedSimakan.name">
+            Mohamed Simakan
+          </h3>
+
+          <p data-i18n="talent.players.mohamedSimakan.role">
+            Professional Footballer
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/nicolas-pepe-hero.jpg"
+          alt="Nicolas Pépé"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.nicolasPepe.status">
+            Ivory Coast International
+          </small>
+
+          <h3 data-i18n="talent.players.nicolasPepe.name">
+            Nicolas Pépé
+          </h3>
+
+          <p data-i18n="talent.players.nicolasPepe.role">
+            Professional Footballer
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/loum-tchaouna-hero.jpg"
+          alt="Loum Tchaouna"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.loumTchaouna.status">
+            France U21
+          </small>
+
+          <h3 data-i18n="talent.players.loumTchaouna.name">
+            Loum Tchaouna
+          </h3>
+
+          <p data-i18n="talent.players.loumTchaouna.role">
+            Coventry City
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/george-ilenikhena-hero.jpg"
+          alt="George Ilenikhena"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.georgeIlenikhena.status">
+            Forward
+          </small>
+
+          <h3 data-i18n="talent.players.georgeIlenikhena.name">
+            George Ilenikhena
+          </h3>
+
+          <p data-i18n="talent.players.georgeIlenikhena.role">
+            Professional Footballer
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/djeidi-gassama-hero.jpg"
+          alt="Djeidi Gassama"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.djeidiGassama.status">
+            Winger
+          </small>
+
+          <h3 data-i18n="talent.players.djeidiGassama.name">
+            Djeidi Gassama
+          </h3>
+
+          <p data-i18n="talent.players.djeidiGassama.role">
+            Professional Footballer
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/kevin-boma-hero.jpg"
+          alt="Kévin Boma"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.kevinBoma.status">
+            Defender
+          </small>
+
+          <h3 data-i18n="talent.players.kevinBoma.name">
+            Kévin Boma
+          </h3>
+
+          <p data-i18n="talent.players.kevinBoma.role">
+            Professional Footballer
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/idjessi-metsoko-hero.jpg"
+          alt="Idjessi Metsoko"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.idjessiMetsoko.status">
+            Togo International
+          </small>
+
+          <h3 data-i18n="talent.players.idjessiMetsoko.name">
+            Idjessi Metsoko
+          </h3>
+
+          <p data-i18n="talent.players.idjessiMetsoko.role">
+            Professional Footballer
+          </p>
+        </div>
+      </article>
+
+
+      <article class="player-card">
+        <img
+          src="assets/players/jordy-makengo-hero.jpg"
+          alt="Jordy Makengo"
+        />
+
+        <div class="player-info">
+          <small data-i18n="talent.players.jordyMakengo.status">
+            Left Back
+          </small>
+
+          <h3 data-i18n="talent.players.jordyMakengo.name">
+            Jordy Makengo
+          </h3>
+
+          <p data-i18n="talent.players.jordyMakengo.role">
+            SC Freiburg
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===========================
+     INTERNATIONAL PRESENCE
+=========================== -->
+
+<section>
+
+  <div class="container international-grid">
+
+    <div>
+
+      <p
+        class="eyebrow"
+        data-i18n="international.eyebrow"
+      >
+        International Presence
+      </p>
+
+      <h2
+        class="section-title"
+        data-i18n="international.title"
+      >
+        Connected across the football world.
+      </h2>
+
+      <p
+        class="section-copy"
+        data-i18n="international.description"
+      >
+        BS Group International operates through an extensive network
+        of clubs, sporting professionals and international markets.
+      </p>
+
+    </div>
+
+
+    <div class="territories">
+
+      <div class="territory">
+        <strong data-i18n="international.europe.title">
+          Europe
+        </strong>
+
+        <span data-i18n="international.europe.text">
+          Major European football markets
+        </span>
       </div>
 
-      <div>
 
-        <h4 data-i18n="footer.navigation">
-          Navigation
-        </h4>
+      <div class="territory">
+        <strong data-i18n="international.uk.title">
+          United Kingdom
+        </strong>
 
-        <a href="players.html" data-i18n="nav.players">
-          Players
-        </a>
-
-        <a href="services.html" data-i18n="nav.services">
-          Services
-        </a>
-
-        <a href="transfers.html" data-i18n="nav.transfers">
-          Transfers
-        </a>
-
-        <a href="contact.html" data-i18n="nav.contact">
-          Contact
-        </a>
-
+        <span data-i18n="international.uk.text">
+          Premier professional football network
+        </span>
       </div>
 
-      <div>
 
-        <h4 data-i18n="footer.contact">
-          Contact
-        </h4>
+      <div class="territory">
+        <strong data-i18n="international.africa.title">
+          Africa
+        </strong>
 
-        <a href="mailto:info@bsgroupinternational.com">
-          info@bsgroupinternational.com
+        <span data-i18n="international.africa.text">
+          International talent and national teams
+        </span>
+      </div>
+
+
+      <div class="territory">
+        <strong data-i18n="international.middleEast.title">
+          Middle East
+        </strong>
+
+        <span data-i18n="international.middleEast.text">
+          Strategic football opportunities
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===========================
+     ABOUT
+=========================== -->
+
+<section class="about" id="about">
+
+  <div class="container about-inner">
+
+    <p
+      class="eyebrow"
+      data-i18n="about.eyebrow"
+    >
+      About BS Group
+    </p>
+
+    <p
+      class="about-text"
+      data-i18n="about.text"
+    >
+      BS Group International provides professional footballers with
+      strategic representation built around sporting ambition,
+      negotiation expertise, international opportunity and long-term
+      career development.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ===========================
+     COMING SOON
+=========================== -->
+
+<section class="coming">
+
+  <div class="container">
+
+    <h2 data-i18n="coming.title">
+      THE NEW BS GROUP INTERNATIONAL EXPERIENCE IS COMING.
+    </h2>
+
+    <p data-i18n="coming.subtitle">
+      New digital platform currently in development
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ===========================
+     CONTACT
+=========================== -->
+
+<section class="contact" id="contact">
+
+  <div class="container contact-grid">
+
+    <div>
+
+      <p
+        class="eyebrow"
+        data-i18n="contact.eyebrow"
+      >
+        Private Representation Enquiries
+      </p>
+
+      <h2 data-i18n="contact.title">
+        Let's talk football.
+      </h2>
+
+    </div>
+
+
+    <div class="contact-details">
+
+      <a href="mailto:info@bsgroupinternational.com">
+        info@bsgroupinternational.com
+      </a>
+
+      <a
+        href="https://bsgroupinternational.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        bsgroupinternational.com
+      </a>
+
+      <div class="socials">
+
+        <a href="#" data-i18n="contact.instagram">
+          Instagram
+        </a>
+
+        <a href="#" data-i18n="contact.tiktok">
+          TikTok
+        </a>
+
+        <a href="#" data-i18n="contact.linkedin">
+          LinkedIn
         </a>
 
       </div>
 
     </div>
 
-    <div class="footer-bottom">
-      <p>
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+
+      <img
+        src="assets/branding/bs-group-international-logo-gold.png"
+        alt="BS Group International"
+        class="footer-logo"
+      />
+
+      <p data-i18n="footer.copyright">
         © 2026 BS Group International. All rights reserved.
       </p>
+
+      <p
+        class="footer-company"
+        data-i18n="footer.company"
+      >
+        BS Group Entertainment Sports LLC
+      </p>
+
     </div>
 
-  </footer>
 
-  <script src="js/main.js"></script>
+    <div class="footer-links">
+
+      <a href="#" data-i18n="footer.privacy">
+        Privacy
+      </a>
+
+      <a href="#" data-i18n="footer.legal">
+        Legal
+      </a>
+
+      <a
+        href="mailto:info@bsgroupinternational.com"
+        data-i18n="footer.contact"
+      >
+        Contact
+      </a>
+
+      <a
+        href="https://bsgroupinternational.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        bsgroupinternational.com
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  const SUPPORTED_LANGUAGES = ["en", "fr", "es"];
+  const DEFAULT_LANGUAGE = "en";
+
+  let translations = {};
+
+  const intro = document.getElementById("intro");
+  const introVideo = document.getElementById("introVideo");
+  const skipIntro = document.getElementById("skipIntro");
+  const header = document.getElementById("header");
+  const metaDescription = document.getElementById("metaDescription");
+
+  function getNestedValue(object, path) {
+    return path.split(".").reduce((current, key) => {
+      return current && current[key] !== undefined
+        ? current[key]
+        : undefined;
+    }, object);
+  }
+
+  async function loadTranslations() {
+    try {
+      const response = await fetch("js/translations.json");
+
+      if (!response.ok) {
+        throw new Error(
+          `Unable to load translations.json: ${response.status}`
+        );
+      }
+
+      translations = await response.json();
+
+      const savedLanguage = localStorage.getItem("bsGroupLanguage");
+
+      const browserLanguage =
+        navigator.language
+          ? navigator.language.substring(0, 2).toLowerCase()
+          : DEFAULT_LANGUAGE;
+
+      const initialLanguage =
+        savedLanguage &&
+        SUPPORTED_LANGUAGES.includes(savedLanguage)
+          ? savedLanguage
+          : SUPPORTED_LANGUAGES.includes(browserLanguage)
+          ? browserLanguage
+          : DEFAULT_LANGUAGE;
+
+      setLanguage(initialLanguage);
+
+    } catch (error) {
+      console.error("Translation loading error:", error);
+
+      /* English text already exists in the HTML,
+         so the page remains usable even if JSON fails. */
+      setActiveLanguageButton(DEFAULT_LANGUAGE);
+    }
+  }
+
+  function setLanguage(language) {
+    if (!SUPPORTED_LANGUAGES.includes(language)) {
+      language = DEFAULT_LANGUAGE;
+    }
+
+    if (!translations[language]) {
+      console.warn(`Translation not available for: ${language}`);
+      return;
+    }
+
+    document.documentElement.lang = language;
+
+    localStorage.setItem("bsGroupLanguage", language);
+
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+      const key = element.getAttribute("data-i18n");
+
+      const translatedValue = getNestedValue(
+        translations[language],
+        key
+      );
+
+      if (translatedValue !== undefined) {
+        element.textContent = translatedValue;
+      }
+    });
+
+    const translatedTitle =
+      translations[language]?.meta?.title;
+
+    const translatedDescription =
+      translations[language]?.meta?.description;
+
+    if (translatedTitle) {
+      document.title = translatedTitle;
+    }
+
+    if (translatedDescription && metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        translatedDescription
+      );
+    }
+
+    setActiveLanguageButton(language);
+  }
+
+  function setActiveLanguageButton(language) {
+    document
+      .querySelectorAll("[data-lang]")
+      .forEach((button) => {
+        button.classList.toggle(
+          "active",
+          button.dataset.lang === language
+        );
+      });
+  }
+
+  document
+    .querySelectorAll("[data-lang]")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        setLanguage(button.dataset.lang);
+      });
+    });
+
+  function closeIntro() {
+    intro.classList.add("hidden");
+  }
+
+  skipIntro.addEventListener("click", closeIntro);
+
+  introVideo.addEventListener("ended", closeIntro);
+
+  introVideo.addEventListener("error", () => {
+    setTimeout(closeIntro, 2500);
+  });
+
+  /* Safety fallback */
+  setTimeout(closeIntro, 7000);
+
+  window.addEventListener("scroll", () => {
+    header.classList.toggle(
+      "scrolled",
+      window.scrollY > 50
+    );
+  });
+
+  loadTranslations();
+</script>
 
 </body>
 </html>
