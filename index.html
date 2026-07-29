@@ -2300,6 +2300,76 @@ setTimeout(closeIntro, 5500);
 
   loadTranslations();
 </script>
+<script src="https://unpkg.com/globe.gl"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const globeElement = document.getElementById("talentGlobe");
 
+    if (!globeElement || typeof Globe === "undefined") {
+      return;
+    }
+
+    const playerLocations = [
+      { lat: 40.4168, lng: -3.7038, name: "Nicolas Pépé", club: "Villarreal CF", country: "Spain" },
+      { lat: 48.8566, lng: 2.3522, name: "Timothy Weah", club: "Professional Football", country: "France" },
+      { lat: 51.3397, lng: 12.3731, name: "Castello Lukeba", club: "RB Leipzig", country: "Germany" },
+      { lat: 51.3397, lng: 12.3731, name: "Jordy Makengo", club: "Professional Football", country: "Germany" },
+      { lat: 51.3397, lng: 12.3731, name: "Nathanaël Mbuku", club: "Professional Football", country: "Germany" },
+      { lat: 24.7136, lng: 46.6753, name: "Mohamed Simakan", club: "Professional Football", country: "Saudi Arabia" },
+      { lat: 24.7136, lng: 46.6753, name: "George Ilenikhena", club: "Professional Football", country: "Saudi Arabia" },
+      { lat: 51.5072, lng: -0.1276, name: "Loum Tchaouna", club: "Professional Football", country: "England" },
+      { lat: 55.9533, lng: -3.1883, name: "Djeidi Gassama", club: "Professional Football", country: "Scotland" },
+      { lat: 55.9533, lng: -3.1883, name: "Idjessi Metsoko", club: "Professional Football", country: "Scotland" },
+      { lat: 48.2082, lng: 16.3738, name: "Kévin Boma", club: "Professional Football", country: "Austria" },
+      { lat: 48.8566, lng: 2.3522, name: "Khalil Fayad", club: "Professional Football", country: "France" }
+    ];
+
+    const world = Globe()(globeElement)
+      .backgroundColor("rgba(0,0,0,0)")
+      .globeImageUrl("//unpkg.com/three-globe/example/img/earth-dark.jpg")
+      .bumpImageUrl("//unpkg.com/three-globe/example/img/earth-topology.png")
+      .pointsData(playerLocations)
+      .pointLat("lat")
+      .pointLng("lng")
+      .pointColor(() => "#d9b74a")
+      .pointAltitude(0.03)
+      .pointRadius(0.35)
+      .pointLabel(d => `
+        <div style="
+          background:#0b1018;
+          color:white;
+          padding:10px 12px;
+          border:1px solid rgba(217,183,74,.5);
+          border-radius:10px;
+          font-family:Arial,sans-serif;
+          min-width:170px;
+        ">
+          <strong style="color:#d9b74a;">${d.name}</strong><br>
+          <span>${d.club}</span><br>
+          <span>${d.country}</span>
+        </div>
+      `);
+
+    world.controls().autoRotate = true;
+    world.controls().autoRotateSpeed = 0.45;
+    world.controls().enableZoom = true;
+
+    world.pointOfView(
+      { lat: 25, lng: 10, altitude: 2.2 },
+      1000
+    );
+
+    const resizeGlobe = () => {
+      const width = globeElement.clientWidth;
+      const height = globeElement.clientHeight;
+
+      world.width(width);
+      world.height(height);
+    };
+
+    resizeGlobe();
+    window.addEventListener("resize", resizeGlobe);
+  });
+</script>
 </body>
 </html>
