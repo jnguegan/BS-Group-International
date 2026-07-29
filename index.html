@@ -751,7 +751,8 @@
 
 .globe-player-card {
   position: absolute;
-  z-index: 10;
+  z-index: 1000;
+  pointer-events: auto;
 
   min-width: 220px;
   max-width: 300px;
@@ -833,6 +834,8 @@
   justify-content: center;
 
   cursor: pointer;
+  pointer-events: auto !important;
+  z-index: 50;
 
   transform: translate(-50%, -50%);
 }
@@ -3038,41 +3041,62 @@ document.addEventListener("DOMContentLoaded", () => {
      LARGE CLICKABLE HTML MARKERS
   ========================================================= */
 
-  function markerElement(location) {
+ function markerElement(location) {
 
-    const wrapper = document.createElement("div");
+  const wrapper = document.createElement("div");
 
-    wrapper.className = "bs-globe-marker";
+  wrapper.className = "bs-globe-marker";
 
-    wrapper.innerHTML = `
-      <div class="bs-marker-pulse"></div>
+  wrapper.style.pointerEvents = "auto";
+  wrapper.style.cursor = "pointer";
+  wrapper.style.touchAction = "manipulation";
 
-      <div class="bs-marker-core">
-        ${location.players.length}
-      </div>
-    `;
+  wrapper.innerHTML = `
+    <div class="bs-marker-pulse"></div>
 
-    wrapper.title =
-      `${location.country} — ${location.players.length} player${location.players.length !== 1 ? "s" : ""}`;
+    <div class="bs-marker-core">
+      ${location.players.length}
+    </div>
+  `;
 
-    wrapper.addEventListener("mouseenter", () => {
-      pauseRotation();
-    });
+  wrapper.title =
+    `${location.country} — ${location.players.length} player${location.players.length !== 1 ? "s" : ""}`;
 
-    wrapper.addEventListener("click", event => {
 
-      event.stopPropagation();
+  /* HOVER */
 
-      pauseRotation();
+  wrapper.addEventListener("mouseenter", () => {
+    pauseRotation();
+    showPlayerCard(location);
+  });
 
-      showPlayerCard(location);
 
-    });
+  /* CLICK / TOUCH */
 
-    return wrapper;
+  wrapper.addEventListener("pointerdown", event => {
 
-  }
+    event.preventDefault();
+    event.stopPropagation();
 
+    pauseRotation();
+    showPlayerCard(location);
+
+  });
+
+
+  wrapper.addEventListener("click", event => {
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    pauseRotation();
+    showPlayerCard(location);
+
+  });
+
+
+  return wrapper;
+}
 
   /* =========================================================
      PLAYER CARD
