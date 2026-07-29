@@ -1316,83 +1316,201 @@
 
 
 <!-- ===========================
-     INTERNATIONAL PRESENCE
+     GLOBAL TALENT & PRESENCE
 =========================== -->
 
-<section>
+<section class="global-world-section" id="global-world">
 
-  <div class="container international-grid">
+  <!-- ===========================
+       TALENT GLOBE
+  =========================== -->
 
-    <div>
+  <div class="container talent-world">
+
+    <div class="global-section-heading">
 
       <p
         class="eyebrow"
-        data-i18n="international.eyebrow"
+        data-i18n="international.globe.eyebrow"
       >
-        International Presence
+        Global Talent Network
       </p>
 
       <h2
         class="section-title"
-        data-i18n="international.title"
+        data-i18n="international.globe.title"
       >
-        Connected across the football world.
+        Our Talent. One World.
       </h2>
 
       <p
         class="section-copy"
-        data-i18n="international.description"
+        data-i18n="international.globe.description"
       >
-        BS Group International operates through an extensive network
-        of clubs, sporting professionals and international markets.
+        BS Group International represents professional football talent
+        competing across leagues, countries and continents.
       </p>
 
     </div>
 
 
-    <div class="territories">
+    <div class="globe-mode-switcher">
 
-      <div class="territory">
-        <strong data-i18n="international.europe.title">
-          Europe
-        </strong>
+      <button
+        type="button"
+        class="globe-mode active"
+        data-globe-mode="clubs"
+        data-i18n="international.globe.clubLocations"
+      >
+        Club Locations
+      </button>
 
-        <span data-i18n="international.europe.text">
-          Major European football markets
-        </span>
+      <button
+        type="button"
+        class="globe-mode"
+        data-globe-mode="origins"
+        data-i18n="international.globe.playerOrigins"
+      >
+        Player Origins
+      </button>
+
+    </div>
+
+
+    <div class="globe-stage">
+
+      <div
+        id="talentGlobe"
+        class="talent-globe"
+        aria-label="Interactive global map of BS Group International talent"
+      ></div>
+
+      <div
+        id="globePlayerCard"
+        class="globe-player-card"
+        hidden
+      ></div>
+
+    </div>
+
+
+    <p
+      class="globe-instruction"
+      data-i18n="international.globe.instruction"
+    >
+      Drag to explore the globe. Hover or tap a location to discover our talent.
+    </p>
+
+  </div>
+
+
+  <!-- ===========================
+       CORPORATE GLOBAL PRESENCE
+  =========================== -->
+
+  <div class="container corporate-presence">
+
+    <div class="global-section-heading">
+
+      <p
+        class="eyebrow"
+        data-i18n="international.presence.eyebrow"
+      >
+        Global Presence
+      </p>
+
+      <h2
+        class="section-title"
+        data-i18n="international.presence.title"
+      >
+        Local presence. International reach.
+      </h2>
+
+      <p
+        class="section-copy"
+        data-i18n="international.presence.description"
+      >
+        BS Group International maintains a strategic presence across key
+        international markets, supporting our global football operations.
+      </p>
+
+    </div>
+
+
+    <div class="presence-grid">
+
+      <div class="presence-card">
+        <span class="presence-code">ES</span>
+
+        <div>
+          <strong data-i18n="international.presence.spain.title">
+            Spain
+          </strong>
+
+          <span data-i18n="international.presence.spain.text">
+            European Presence
+          </span>
+        </div>
       </div>
 
 
-      <div class="territory">
-        <strong data-i18n="international.uk.title">
-          United Kingdom
-        </strong>
+      <div class="presence-card">
+        <span class="presence-code">LU</span>
 
-        <span data-i18n="international.uk.text">
-          Premier professional football network
-        </span>
+        <div>
+          <strong data-i18n="international.presence.luxembourg.title">
+            Luxembourg
+          </strong>
+
+          <span data-i18n="international.presence.luxembourg.text">
+            European Presence
+          </span>
+        </div>
       </div>
 
 
-      <div class="territory">
-        <strong data-i18n="international.africa.title">
-          Africa
-        </strong>
+      <div class="presence-card">
+        <span class="presence-code">UK</span>
 
-        <span data-i18n="international.africa.text">
-          International talent and national teams
-        </span>
+        <div>
+          <strong data-i18n="international.presence.uk.title">
+            United Kingdom
+          </strong>
+
+          <span data-i18n="international.presence.uk.text">
+            United Kingdom Presence
+          </span>
+        </div>
       </div>
 
 
-      <div class="territory">
-        <strong data-i18n="international.middleEast.title">
-          Middle East
-        </strong>
+      <div class="presence-card">
+        <span class="presence-code">IM</span>
 
-        <span data-i18n="international.middleEast.text">
-          Strategic football opportunities
-        </span>
+        <div>
+          <strong data-i18n="international.presence.isleOfMan.title">
+            Isle of Man
+          </strong>
+
+          <span data-i18n="international.presence.isleOfMan.text">
+            International Presence
+          </span>
+        </div>
+      </div>
+
+
+      <div class="presence-card">
+        <span class="presence-code">AE</span>
+
+        <div>
+          <strong data-i18n="international.presence.uae.title">
+            United Arab Emirates
+          </strong>
+
+          <span data-i18n="international.presence.uae.text">
+            Middle East Presence
+          </span>
+        </div>
       </div>
 
     </div>
