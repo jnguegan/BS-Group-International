@@ -582,6 +582,444 @@
       font-size: 0.84rem;
     }
 
+/* =========================================================
+   GLOBAL TALENT & PRESENCE
+========================================================= */
+
+.global-world-section {
+  position: relative;
+  padding: 90px 0 110px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(201, 168, 76, 0.10), transparent 35%),
+    linear-gradient(180deg, #111722 0%, #0b1018 100%);
+}
+
+.global-world-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 25%, rgba(255,255,255,0.025), transparent 20%),
+    radial-gradient(circle at 85% 65%, rgba(201,168,76,0.05), transparent 24%);
+}
+
+.global-world-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+.global-section-heading {
+  max-width: 900px;
+  margin-bottom: 32px;
+}
+
+.global-section-heading .section-title {
+  margin: 8px 0 18px;
+}
+
+.global-section-heading .section-copy {
+  max-width: 720px;
+}
+
+
+/* =========================================================
+   GLOBE AREA
+========================================================= */
+
+.talent-world {
+  margin-bottom: 100px;
+}
+
+.globe-mode-switcher {
+  display: inline-flex;
+  gap: 8px;
+  padding: 6px;
+  margin: 8px 0 24px;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(10px);
+}
+
+.globe-mode {
+  appearance: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  padding: 10px 18px;
+  border-radius: 999px;
+
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.globe-mode:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.globe-mode.active {
+  color: #121212;
+  background: linear-gradient(135deg, #e2c467, #b8922f);
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.22);
+}
+
+
+/* =========================================================
+   GLOBE STAGE
+========================================================= */
+
+.globe-stage {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at center, rgba(201, 168, 76, 0.07), transparent 38%),
+    linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.005));
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.28),
+    inset 0 0 80px rgba(201, 168, 76, 0.025);
+}
+
+.globe-stage::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(201, 168, 76, 0.11) 0%,
+    rgba(201, 168, 76, 0.04) 40%,
+    transparent 70%
+  );
+  filter: blur(14px);
+  pointer-events: none;
+}
+
+.talent-globe {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* the canvas created later by Globe.GL */
+.talent-globe canvas {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   PLAYER POPUP CARD
+========================================================= */
+
+.globe-player-card {
+  position: absolute;
+  z-index: 10;
+
+  min-width: 220px;
+  max-width: 300px;
+
+  padding: 18px 20px;
+
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 16px;
+
+  background: rgba(11, 16, 24, 0.92);
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(201, 168, 76, 0.07);
+
+  color: #fff;
+}
+
+.globe-player-card[hidden] {
+  display: none;
+}
+
+.globe-player-card strong {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 1rem;
+  color: #e2c467;
+}
+
+.globe-player-card span {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.globe-player-card a {
+  display: inline-block;
+  margin-top: 12px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #e2c467;
+  text-decoration: none;
+}
+
+.globe-player-card a:hover {
+  color: #fff;
+}
+
+.globe-instruction {
+  margin-top: 16px;
+  text-align: center;
+
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+
+  color: rgba(255, 255, 255, 0.48);
+}
+
+
+/* =========================================================
+   CORPORATE GLOBAL PRESENCE
+========================================================= */
+
+.corporate-presence {
+  padding-top: 85px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.presence-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 38px;
+}
+
+.presence-card {
+  position: relative;
+
+  min-height: 160px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 24px 20px;
+
+  border: 1px solid rgba(201, 168, 76, 0.17);
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.008)
+    );
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.presence-card::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  background: rgba(201, 168, 76, 0.08);
+  filter: blur(12px);
+
+  transition: transform 0.3s ease;
+}
+
+.presence-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 168, 76, 0.45);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(201, 168, 76, 0.08),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.24),
+    0 0 24px rgba(201, 168, 76, 0.05);
+}
+
+.presence-card:hover::after {
+  transform: scale(1.3);
+}
+
+
+/* =========================================================
+   COUNTRY CODE
+========================================================= */
+
+.presence-code {
+  flex: 0 0 auto;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border: 1px solid rgba(201, 168, 76, 0.45);
+  border-radius: 12px;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+
+  color: #e2c467;
+
+  background: rgba(201, 168, 76, 0.06);
+}
+
+.presence-card strong {
+  display: block;
+  margin: 3px 0 8px;
+
+  font-size: 1rem;
+  color: #fff;
+}
+
+.presence-card div > span {
+  display: block;
+
+  font-size: 0.82rem;
+  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .presence-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .global-world-section {
+    padding: 70px 0 80px;
+  }
+
+  .talent-world {
+    margin-bottom: 75px;
+  }
+
+  .globe-stage {
+    min-height: 430px;
+    border-radius: 22px;
+  }
+
+  .talent-globe {
+    height: 430px;
+  }
+
+  .presence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .presence-card {
+    min-height: 145px;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .globe-mode-switcher {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .globe-mode {
+    padding: 10px 8px;
+    font-size: 0.68rem;
+  }
+
+  .globe-stage {
+    min-height: 360px;
+  }
+
+  .talent-globe {
+    height: 360px;
+  }
+
+  .presence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .presence-card {
+    min-height: auto;
+  }
+
+}
+    
+    
+
+    
     /* ===========================
        ABOUT
     =========================== */
