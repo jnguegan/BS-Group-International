@@ -122,29 +122,45 @@
     
     },
 
-    "international": {
-      "eyebrow": "International Presence",
-      "title": "Connected across the football world.",
-      "description": "BS Group International operates through an extensive network of clubs, sporting professionals and international markets, supporting players throughout every stage of their professional careers.",
-
-      "europe": {
-        "title": "Europe",
-        "text": "Major European football markets"
-      },
-      "uk": {
-        "title": "United Kingdom",
-        "text": "Premier professional football network"
-      },
-      "africa": {
-        "title": "Africa",
-        "text": "International talent and national teams"
-      },
-      "middleEast": {
-        "title": "Middle East",
-        "text": "Strategic football opportunities"
-      }
+   "international": {
+  "globe": {
+    "eyebrow": "Global Talent Network",
+    "title": "Our Talent. One World.",
+    "description": "BS Group International represents professional football talent competing across leagues, countries and continents.",
+    "clubLocations": "Club Locations",
+    "playerOrigins": "Player Origins",
+    "instruction": "Drag to explore the globe. Hover or tap a location to discover our talent.",
+    "players": "Players",
+    "club": "Club",
+    "location": "Location",
+    "viewProfile": "View Profile"
+  },
+  "presence": {
+    "eyebrow": "Global Presence",
+    "title": "Local presence. International reach.",
+    "description": "BS Group International maintains a strategic presence across key international markets, supporting our global football operations.",
+    "spain": {
+      "title": "Spain",
+      "text": "European Presence"
     },
-
+    "luxembourg": {
+      "title": "Luxembourg",
+      "text": "European Presence"
+    },
+    "uk": {
+      "title": "United Kingdom",
+      "text": "United Kingdom Presence"
+    },
+    "isleOfMan": {
+      "title": "Isle of Man",
+      "text": "International Presence"
+    },
+    "uae": {
+      "title": "United Arab Emirates",
+      "text": "Middle East Presence"
+    }
+  }
+},
     "about": {
       "eyebrow": "About BS Group",
       "text": "BS Group International provides professional footballers with strategic representation built around sporting ambition, negotiation expertise, international opportunity and long-term career development."
@@ -396,29 +412,45 @@
 }
     },
 
-    "international": {
-      "eyebrow": "Présence Internationale",
-      "title": "Connectés au monde du football.",
-      "description": "BS Group International s'appuie sur un vaste réseau de clubs, de professionnels du sport et de marchés internationaux afin d'accompagner les joueurs à chaque étape de leur carrière.",
-
-      "europe": {
-        "title": "Europe",
-        "text": "Principaux marchés du football européen"
-      },
-      "uk": {
-        "title": "Royaume-Uni",
-        "text": "Réseau du football professionnel britannique"
-      },
-      "africa": {
-        "title": "Afrique",
-        "text": "Talents internationaux et sélections nationales"
-      },
-      "middleEast": {
-        "title": "Moyen-Orient",
-        "text": "Opportunités stratégiques dans le football"
-      }
+   "international": {
+  "globe": {
+    "eyebrow": "Réseau Mondial de Talents",
+    "title": "Nos Talents. Un Seul Monde.",
+    "description": "BS Group International représente des footballeurs professionnels évoluant dans différents championnats, pays et continents.",
+    "clubLocations": "Clubs Actuels",
+    "playerOrigins": "Origines des Joueurs",
+    "instruction": "Faites tourner le globe. Survolez ou touchez une localisation pour découvrir nos joueurs.",
+    "players": "Joueurs",
+    "club": "Club",
+    "location": "Localisation",
+    "viewProfile": "Voir le Profil"
+  },
+  "presence": {
+    "eyebrow": "Présence Internationale",
+    "title": "Présence locale. Portée internationale.",
+    "description": "BS Group International maintient une présence stratégique sur des marchés internationaux clés afin de soutenir ses activités dans le football mondial.",
+    "spain": {
+      "title": "Espagne",
+      "text": "Présence Européenne"
     },
-
+    "luxembourg": {
+      "title": "Luxembourg",
+      "text": "Présence Européenne"
+    },
+    "uk": {
+      "title": "Royaume-Uni",
+      "text": "Présence au Royaume-Uni"
+    },
+    "isleOfMan": {
+      "title": "Île de Man",
+      "text": "Présence Internationale"
+    },
+    "uae": {
+      "title": "Émirats Arabes Unis",
+      "text": "Présence au Moyen-Orient"
+    }
+  }
+},
     "about": {
       "eyebrow": "À propos de BS Group",
       "text": "BS Group International offre aux footballeurs professionnels une représentation stratégique fondée sur l'ambition sportive, l'expertise en négociation, les opportunités internationales et le développement de carrière à long terme."
@@ -671,28 +703,45 @@
     
     },
 
-    "international": {
-      "eyebrow": "Presencia Internacional",
-      "title": "Conectados con el mundo del fútbol.",
-      "description": "BS Group International opera a través de una amplia red de clubes, profesionales del deporte y mercados internacionales, acompañando a los jugadores durante cada etapa de sus carreras profesionales.",
-
-      "europe": {
-        "title": "Europa",
-        "text": "Principales mercados del fútbol europeo"
-      },
-      "uk": {
-        "title": "Reino Unido",
-        "text": "Red de fútbol profesional británico"
-      },
-      "africa": {
-        "title": "África",
-        "text": "Talento internacional y selecciones nacionales"
-      },
-      "middleEast": {
-        "title": "Oriente Medio",
-        "text": "Oportunidades estratégicas en el fútbol"
-      }
+   "international": {
+  "globe": {
+    "eyebrow": "Red Global de Talento",
+    "title": "Nuestro Talento. Un Solo Mundo.",
+    "description": "BS Group International representa a futbolistas profesionales que compiten en ligas, países y continentes de todo el mundo.",
+    "clubLocations": "Ubicación de Clubes",
+    "playerOrigins": "Origen de los Jugadores",
+    "instruction": "Gira el globo para explorar. Pasa el cursor o toca una ubicación para descubrir nuestro talento.",
+    "players": "Jugadores",
+    "club": "Club",
+    "location": "Ubicación",
+    "viewProfile": "Ver Perfil"
+  },
+  "presence": {
+    "eyebrow": "Presencia Internacional",
+    "title": "Presencia local. Alcance internacional.",
+    "description": "BS Group International mantiene una presencia estratégica en mercados internacionales clave para apoyar nuestras operaciones en el fútbol mundial.",
+    "spain": {
+      "title": "España",
+      "text": "Presencia Europea"
     },
+    "luxembourg": {
+      "title": "Luxemburgo",
+      "text": "Presencia Europea"
+    },
+    "uk": {
+      "title": "Reino Unido",
+      "text": "Presencia en el Reino Unido"
+    },
+    "isleOfMan": {
+      "title": "Isla de Man",
+      "text": "Presencia Internacional"
+    },
+    "uae": {
+      "title": "Emiratos Árabes Unidos",
+      "text": "Presencia en Oriente Medio"
+    }
+  }
+},
 
     "about": {
       "eyebrow": "Sobre BS Group",
