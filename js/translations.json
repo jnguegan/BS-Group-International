@@ -135,31 +135,39 @@
     "location": "Location",
     "viewProfile": "View Profile"
   },
-  "presence": {
-    "eyebrow": "Global Presence",
-    "title": "Local presence. International reach.",
-    "description": "BS Group International maintains a strategic presence across key international markets, supporting our global football operations.",
-    "spain": {
-      "title": "Spain",
-      "text": "European Presence"
-    },
-    "luxembourg": {
-      "title": "Luxembourg",
-      "text": "European Presence"
-    },
-    "uk": {
-      "title": "United Kingdom",
-      "text": "United Kingdom Presence"
-    },
-    "isleOfMan": {
-      "title": "Isle of Man",
-      "text": "International Presence"
-    },
-    "uae": {
-      "title": "United Arab Emirates",
-      "text": "Middle East Presence"
-    }
+ "presence": {
+  "eyebrow": "International Presence",
+  "title": "Local presence. International reach.",
+  "description": "BS Group International maintains a strategic presence across key international markets, supporting its football, business and advisory operations.",
+  "spain": {
+    "title": "Spain",
+    "text": "Madrid • Tenerife • Mallorca"
+  },
+  "france": {
+    "title": "France",
+    "text": "Paris • Marseille • Lille • Nantes"
+  },
+  "luxembourg": {
+    "title": "Luxembourg",
+    "text": "Luxembourg"
+  },
+  "uk": {
+    "title": "United Kingdom",
+    "text": "Liverpool"
+  },
+  "isleOfMan": {
+    "title": "Isle of Man",
+    "text": "Douglas"
+  },
+  "italy": {
+    "title": "Italy",
+    "text": "Florence"
+  },
+  "middleEast": {
+    "title": "Middle East",
+    "text": "United Arab Emirates • Saudi Arabia • Qatar"
   }
+}
 },
     "about": {
       "eyebrow": "About BS Group",
@@ -425,31 +433,40 @@
     "location": "Localisation",
     "viewProfile": "Voir le Profil"
   },
+     
   "presence": {
-    "eyebrow": "Présence Internationale",
-    "title": "Présence locale. Portée internationale.",
-    "description": "BS Group International maintient une présence stratégique sur des marchés internationaux clés afin de soutenir ses activités dans le football mondial.",
-    "spain": {
-      "title": "Espagne",
-      "text": "Présence Européenne"
-    },
-    "luxembourg": {
-      "title": "Luxembourg",
-      "text": "Présence Européenne"
-    },
-    "uk": {
-      "title": "Royaume-Uni",
-      "text": "Présence au Royaume-Uni"
-    },
-    "isleOfMan": {
-      "title": "Île de Man",
-      "text": "Présence Internationale"
-    },
-    "uae": {
-      "title": "Émirats Arabes Unis",
-      "text": "Présence au Moyen-Orient"
-    }
+  "eyebrow": "Présence internationale",
+  "title": "Présence locale. Portée internationale.",
+  "description": "BS Group International maintient une présence stratégique sur des marchés internationaux clés afin de soutenir ses activités dans le football, le conseil et le développement des affaires.",
+  "spain": {
+    "title": "Espagne",
+    "text": "Madrid • Tenerife • Majorque"
+  },
+  "france": {
+    "title": "France",
+    "text": "Paris • Marseille • Lille • Nantes"
+  },
+  "luxembourg": {
+    "title": "Luxembourg",
+    "text": "Luxembourg"
+  },
+  "uk": {
+    "title": "Royaume-Uni",
+    "text": "Liverpool"
+  },
+  "isleOfMan": {
+    "title": "Île de Man",
+    "text": "Douglas"
+  },
+  "italy": {
+    "title": "Italie",
+    "text": "Florence"
+  },
+  "middleEast": {
+    "title": "Moyen-Orient",
+    "text": "Émirats arabes unis • Arabie saoudite • Qatar"
   }
+}
 },
     "about": {
       "eyebrow": "À propos de BS Group",
@@ -716,31 +733,40 @@
     "location": "Ubicación",
     "viewProfile": "Ver Perfil"
   },
-  "presence": {
-    "eyebrow": "Presencia Internacional",
-    "title": "Presencia local. Alcance internacional.",
-    "description": "BS Group International mantiene una presencia estratégica en mercados internacionales clave para apoyar nuestras operaciones en el fútbol mundial.",
-    "spain": {
-      "title": "España",
-      "text": "Presencia Europea"
-    },
-    "luxembourg": {
-      "title": "Luxemburgo",
-      "text": "Presencia Europea"
-    },
-    "uk": {
-      "title": "Reino Unido",
-      "text": "Presencia en el Reino Unido"
-    },
-    "isleOfMan": {
-      "title": "Isla de Man",
-      "text": "Presencia Internacional"
-    },
-    "uae": {
-      "title": "Emiratos Árabes Unidos",
-      "text": "Presencia en Oriente Medio"
-    }
+ 
+    "presence": {
+  "eyebrow": "Presencia internacional",
+  "title": "Presencia local. Alcance internacional.",
+  "description": "BS Group International mantiene una presencia estratégica en mercados internacionales clave para apoyar sus actividades en el fútbol, el asesoramiento y el desarrollo de negocios.",
+  "spain": {
+    "title": "España",
+    "text": "Madrid • Tenerife • Mallorca"
+  },
+  "france": {
+    "title": "Francia",
+    "text": "París • Marsella • Lille • Nantes"
+  },
+  "luxembourg": {
+    "title": "Luxemburgo",
+    "text": "Luxemburgo"
+  },
+  "uk": {
+    "title": "Reino Unido",
+    "text": "Liverpool"
+  },
+  "isleOfMan": {
+    "title": "Isla de Man",
+    "text": "Douglas"
+  },
+  "italy": {
+    "title": "Italia",
+    "text": "Florencia"
+  },
+  "middleEast": {
+    "title": "Oriente Medio",
+    "text": "Emiratos Árabes Unidos • Arabia Saudí • Catar"
   }
+}
 },
 
     "about": {
