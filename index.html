@@ -2459,565 +2459,500 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  /* =========================================================
-     BS GROUP PLAYER DATA
-     Grouped primarily by current playing country
-  ========================================================= */
-
-  const players = [
-
-    /* =========================
-       GERMANY
-    ========================= */
-
-    {
-      name: "Castello Lukeba",
-      country: "Germany",
-      nationality: "France",
-      lat: 51.1657,
-      lng: 10.4515
-    },
-
-    {
-      name: "Jordy Makengo",
-      country: "Germany",
-      nationality: "France",
-      lat: 51.1657,
-      lng: 10.4515
-    },
-
-
-    /* =========================
-       FRANCE
-    ========================= */
-
-    {
-      name: "Timothy Weah",
-      country: "France",
-      nationality: "United States",
-      lat: 46.2276,
-      lng: 2.2137
-    },
-
-    {
-      name: "Sékou Mara",
-      country: "France",
-      nationality: "France",
-      lat: 46.2276,
-      lng: 2.2137
-    },
-
-    {
-  name: "Nathanaël Mbuku",
-  country: "Germany",
-  nationality: "DR Congo",
-  lat: 48.3668,
-  lng: 10.8985
-},
-
-    {
-      name: "Khalil Fayad",
-      country: "France",
-      nationality: "Morocco",
-      lat: 46.2276,
-      lng: 2.2137
-    },
-
-    {
-      name: "Gaoussou Traoré",
-      country: "France",
-      nationality: "France",
-      lat: 46.2276,
-      lng: 2.2137
-    },
-
-    {
-      name: "Abdoulaye Niakaté",
-      country: "France",
-      nationality: "Mali",
-      lat: 46.2276,
-      lng: 2.2137
-    },
-
-    {
-      name: "Oliver Mvouama",
-      country: "France",
-      nationality: "France",
-      lat: 46.2276,
-      lng: 2.2137
-    },
-
-    {
-      name: "Felix Bienck",
-      country: "France",
-      nationality: "France",
-      lat: 46.2276,
-      lng: 2.2137
-    },
-
-
-    /* =========================
-       SAUDI ARABIA
-    ========================= */
-
-    {
-      name: "Mohamed Simakan",
-      country: "Saudi Arabia",
-      nationality: "France",
-      lat: 23.8859,
-      lng: 45.0792
-    },
-
-    {
-      name: "George Ilenikhena",
-      country: "Saudi Arabia",
-      nationality: "Nigeria",
-      lat: 23.8859,
-      lng: 45.0792
-    },
-
-
-    /* =========================
-       ENGLAND
-    ========================= */
-
-    {
-      name: "Loum Tchaouna",
-      country: "England",
-      nationality: "France",
-      lat: 52.3555,
-      lng: -1.1743
-    },
-
-    {
-      name: "Pierre Ekwah",
-      country: "England",
-      nationality: "France",
-      lat: 52.3555,
-      lng: -1.1743
-    },
-
-
-    /* =========================
-       SPAIN
-    ========================= */
-
-    {
-      name: "Nobel Mendy",
-      country: "Spain",
-      nationality: "Senegal",
-      lat: 40.4637,
-      lng: -3.7492
-    },
-
-    {
-      name: "Nicolas Pépé",
-      country: "Spain",
-      nationality: "Cote d'Ivoire",
-      lat: 40.4637,
-      lng: -3.7492
-    },
-
-    {
-      name: "Nico Njalla",
-      country: "Spain",
-      nationality: "Cameroon",
-      lat: 40.4637,
-      lng: -3.7492
-    },
-
-    {
-      name: "Mohammed Hamony",
-      country: "Spain",
-      nationality: "Morocco",
-      lat: 40.4637,
-      lng: -3.7492
-    },
-
-    {
-      name: "Laken Torres",
-      country: "Spain",
-      nationality: "Spain",
-      lat: 40.4637,
-      lng: -3.7492
-    },
-
-
-    /* =========================
-       PORTUGAL
-    ========================= */
-
-    {
-      name: "Gorby",
-      country: "Portugal",
-      nationality: "France",
-      lat: 39.3999,
-      lng: -8.2245
-    },
-
-
-    /* =========================
-       SCOTLAND
-    ========================= */
-
-    {
-      name: "Djeidi Gassama",
-      country: "Scotland",
-      nationality: "Mauritania",
-      lat: 56.4907,
-      lng: -4.2026
-    },
-
-
-    /* =========================
-       SWITZERLAND
-    ========================= */
-
-    {
-      name: "Junior Kadile",
-      country: "Switzerland",
-      nationality: "France",
-      lat: 46.8182,
-      lng: 8.2275
-    },
-
-    {
-      name: "Malamine Efekele",
-      country: "Switzerland",
-      nationality: "France",
-      lat: 46.8182,
-      lng: 8.2275
-    },
-
-
-    /* =========================
-       CZECH REPUBLIC
-    ========================= */
-
-    {
-      name: "Abdoulaye Sylla",
-      country: "Czech Republic",
-      nationality: "Guinea",
-      lat: 49.8175,
-      lng: 15.4730
-    },
-
-    {
-      name: "Cheick Souaré",
-      country: "Czech Republic",
-      nationality: "France",
-      lat: 49.8175,
-      lng: 15.4730
-    },
-
-    {
-      name: "Nassim Innocenti",
-      country: "Czech Republic",
-      nationality: "Burkina Faso",
-      lat: 49.8175,
-      lng: 15.4730
-    },
-
-    {
-      name: "Maximilien Boussou",
-      country: "Czech Republic",
-      nationality: "France",
-      lat: 49.8175,
-      lng: 15.4730
-    },
-
-
-    /* =========================
-       SCOTLAND
-    ========================= */
-
-   {
-  name: "Idjessi Metsoko",
-  country: "Scotland",
-  nationality: "Togo",
-  lat: 56.4620,
-  lng: -2.9707
-},
-
-
-    /* =========================
-       NETHERLANDS
-    ========================= */
-
-    {
-      name: "Noam Emeran",
-      country: "Netherlands",
-      nationality: "Rwanda",
-      lat: 52.1326,
-      lng: 5.2913
-    },
-
-
-    /* =========================
-       UNITED ARAB EMIRATES
-    ========================= */
-
-    {
-      name: "Brahima Diarra",
-      country: "United Arab Emirates",
-      nationality: "Mali",
-      lat: 23.4241,
-      lng: 53.8478
-    },
-
-
-    /* =========================
-       LATVIA
-    ========================= */
-
-    {
-      name: "Amadou Traoré",
-      country: "Latvia",
-      nationality: "Guinea",
-      lat: 56.8796,
-      lng: 24.6032
-    },
-
-
-    /* =========================
-       CURRENT ROSTER —
-       LOCATION TO BE MAINTAINED
-    ========================= */
-
-    {
-  name: "Kévin Boma",
-  country: "Austria",
-  nationality: "Togo",
-  lat: 47.8095,
-  lng: 13.0550
-},
-
-    {
-      name: "Sikou Niakaté",
-      country: "Europe",
-      nationality: "Mali",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Serge-Philippe Raux-Yao",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Lamine Sy",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Ibrahima Baldé",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Waniss Taïbi",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Usman Simbakoli",
-      country: "Europe",
-      nationality: "Central African Republic",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Octave Joly",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Teddy Bartouche-Selbonne",
-      country: "Europe",
-      nationality: "Guadeloupe",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Hermann Tebily",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Kylian Kouakou",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Dylan Vangi",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Oumar Kamara",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Lionel Lukoki",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    },
-
-    {
-      name: "Kelian Baruti",
-      country: "Europe",
-      nationality: "France",
-      lat: 48.8566,
-      lng: 2.3522
-    }
-
+ /* =========================================================
+   BS GROUP PLAYER DATA
+   Grouped by current club country
+========================================================= */
+
+const players = [
+
+  /* =========================
+     GERMANY
+  ========================= */
+
+  {
+    name: "Castello Lukeba",
+    club: "RB Leipzig",
+    country: "Germany",
+    lat: 51.1657,
+    lng: 10.4515
+  },
+
+  {
+    name: "Jordy Makengo",
+    club: "SC Freiburg",
+    country: "Germany",
+    lat: 51.1657,
+    lng: 10.4515
+  },
+
+  {
+    name: "Nathanaël Mbuku",
+    club: "FC Augsburg",
+    country: "Germany",
+    lat: 51.1657,
+    lng: 10.4515
+  },
+
+  {
+    name: "Waniss Taïbi",
+    club: "Hannover 96",
+    country: "Germany",
+    lat: 51.1657,
+    lng: 10.4515
+  },
+
+  /* =========================
+     FRANCE
+  ========================= */
+
+  {
+    name: "Timothy Weah",
+    club: "Olympique de Marseille",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Sékou Mara",
+    club: "RC Strasbourg",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Khalil Fayad",
+    club: "Montpellier HSC",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Gaoussou Traoré",
+    club: "LB Châteauroux",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Abdoulaye Niakaté",
+    club: "EA Guingamp B",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Oliver Mvouama",
+    club: "Stade de Reims B",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Felix Bienck",
+    club: "Olympique de Marseille B",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Pierre Ekwah",
+    club: "AS Saint-Étienne",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Lamine Sy",
+    club: "AJ Auxerre",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Ibrahima Baldé",
+    club: "Rodez AF",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Usman Simbakoli",
+    club: "Angers SCO",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Octave Joly",
+    club: "Rodez AF",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Teddy Bartouche-Selbonne",
+    club: "EA Guingamp",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Hermann Tebily",
+    club: "Rodez AF",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Kylian Kouakou",
+    club: "Valenciennes FC",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  {
+    name: "Dylan Vangi",
+    club: "Rodez AF",
+    country: "France",
+    lat: 46.2276,
+    lng: 2.2137
+  },
+
+  /* =========================
+     SAUDI ARABIA
+  ========================= */
+
+  {
+    name: "Mohamed Simakan",
+    club: "Al-Nassr FC",
+    country: "Saudi Arabia",
+    lat: 23.8859,
+    lng: 45.0792
+  },
+
+  {
+    name: "George Ilenikhena",
+    club: "Al-Ittihad Club",
+    country: "Saudi Arabia",
+    lat: 23.8859,
+    lng: 45.0792
+  },
+
+  /* =========================
+     ENGLAND
+  ========================= */
+
+  {
+    name: "Loum Tchaouna",
+    club: "Coventry City FC",
+    country: "England",
+    lat: 52.3555,
+    lng: -1.1743
+  },
+
+  /* =========================
+     SPAIN
+  ========================= */
+
+  {
+    name: "Nobel Mendy",
+    club: "Rayo Vallecano",
+    country: "Spain",
+    lat: 40.4637,
+    lng: -3.7492
+  },
+
+  {
+    name: "Nicolas Pépé",
+    club: "Villarreal CF",
+    country: "Spain",
+    lat: 40.4637,
+    lng: -3.7492
+  },
+
+  {
+    name: "Nico Njalla",
+    club: "Antequera CF",
+    country: "Spain",
+    lat: 40.4637,
+    lng: -3.7492
+  },
+
+  {
+    name: "Mohammed Hamony",
+    club: "Girona FC B",
+    country: "Spain",
+    lat: 40.4637,
+    lng: -3.7492
+  },
+
+  {
+    name: "Laken Torres",
+    club: "Real Unión",
+    country: "Spain",
+    lat: 40.4637,
+    lng: -3.7492
+  },
+
+  /* =========================
+     PORTUGAL
+  ========================= */
+
+  {
+    name: "Gorby",
+    club: "SC Braga",
+    country: "Portugal",
+    lat: 39.3999,
+    lng: -8.2245
+  },
+
+  {
+    name: "Sikou Niakaté",
+    club: "SC Braga",
+    country: "Portugal",
+    lat: 39.3999,
+    lng: -8.2245
+  },
+
+  {
+    name: "Kelian Baruti",
+    club: "Estoril Praia U23",
+    country: "Portugal",
+    lat: 39.3999,
+    lng: -8.2245
+  },
+
+  /* =========================
+     SCOTLAND
+  ========================= */
+
+  {
+    name: "Djeidi Gassama",
+    club: "Rangers FC",
+    country: "Scotland",
+    lat: 56.4907,
+    lng: -4.2026
+  },
+
+  /* =========================
+     SWITZERLAND
+  ========================= */
+
+  {
+    name: "Junior Kadile",
+    club: "Servette FC",
+    country: "Switzerland",
+    lat: 46.8182,
+    lng: 8.2275
+  },
+
+  {
+    name: "Malamine Efekele",
+    club: "FC St. Gallen",
+    country: "Switzerland",
+    lat: 46.8182,
+    lng: 8.2275
+  },
+
+  /* =========================
+     CZECH REPUBLIC
+  ========================= */
+
+  {
+    name: "Abdoulaye Sylla",
+    club: "SK Sigma Olomouc",
+    country: "Czech Republic",
+    lat: 49.8175,
+    lng: 15.4730
+  },
+
+  {
+    name: "Cheick Souaré",
+    club: "FC Viktoria Plzeň",
+    country: "Czech Republic",
+    lat: 49.8175,
+    lng: 15.4730
+  },
+
+  {
+    name: "Nassim Innocenti",
+    club: "FK Jablonec",
+    country: "Czech Republic",
+    lat: 49.8175,
+    lng: 15.4730
+  },
+
+  {
+    name: "Maximilien Boussou",
+    club: "FC Vysočina Jihlava",
+    country: "Czech Republic",
+    lat: 49.8175,
+    lng: 15.4730
+  },
+
+  /* =========================
+     SLOVAKIA
+  ========================= */
+
+  {
+    name: "Idjessi Metsoko",
+    club: "Spartak Trnava",
+    country: "Slovakia",
+    lat: 48.6690,
+    lng: 19.6990
+  },
+
+  /* =========================
+     NETHERLANDS
+  ========================= */
+
+  {
+    name: "Noam Emeran",
+    club: "FC Emmen",
+    country: "Netherlands",
+    lat: 52.1326,
+    lng: 5.2913
+  },
+
+  /* =========================
+     UNITED ARAB EMIRATES
+  ========================= */
+
+  {
+    name: "Brahima Diarra",
+    club: "Al Wahda FC",
+    country: "United Arab Emirates",
+    lat: 23.4241,
+    lng: 53.8478
+  },
+
+  /* =========================
+     LATVIA
+  ========================= */
+
+  {
+    name: "Amadou Traoré",
+    club: "FK Liepāja",
+    country: "Latvia",
+    lat: 56.8796,
+    lng: 24.6032
+  },
+
+ /* =========================
+     AUSTRIA
+  ========================= */
+
+  {
+    name: "Kévin Boma",
+    club: "FC Red Bull Salzburg",
+    country: "Austria",
+    lat: 47.5162,
+    lng: 14.5501
+  },
+
+  {
+    name: "Serge-Philippe Raux-Yao",
+    club: "SK Rapid Wien",
+    country: "Austria",
+    lat: 47.5162,
+    lng: 14.5501
+  },
+
+  /* =========================
+     BOSNIA AND HERZEGOVINA
+  ========================= */
+
+  {
+    name: "Oumar Kamara",
+    club: "FK Bosna Mionica",
+    country: "Bosnia and Herzegovina",
+    lat: 43.9159,
+    lng: 17.6791
+  },
+
+  /* =========================
+     CROATIA
+  ========================= */
+
+  {
+    name: "Lionel Lukoki",
+    club: "HNK Zadar",
+    country: "Croatia",
+    lat: 45.1000,
+    lng: 15.2000
+  }
+
+  
   ];
 
+/* =========================================================
+   GROUP PLAYERS BY CURRENT CLUB COUNTRY
+========================================================= */
 
-  /* =========================================================
-     GROUP PLAYERS BY LOCATION
-  ========================================================= */
+function groupByCountry(playerList) {
 
-  function groupByCountry(playerList) {
+  const grouped = {};
 
-    const grouped = {};
+  playerList.forEach(player => {
 
-    playerList.forEach(player => {
+    if (!grouped[player.country]) {
 
-      if (!grouped[player.country]) {
+      grouped[player.country] = {
+        country: player.country,
+        lat: player.lat,
+        lng: player.lng,
+        players: []
+      };
 
-        grouped[player.country] = {
-          country: player.country,
-          lat: player.lat,
-          lng: player.lng,
-          players: []
-        };
+    }
 
-      }
+    grouped[player.country].players.push(player);
 
-      grouped[player.country].players.push(player);
+  });
 
-    });
+  return Object.values(grouped);
 
-    return Object.values(grouped);
-
-  }
-
-
-  /* =========================================================
-     GROUP PLAYERS BY ORIGIN
-  ========================================================= */
-
-  const originCoordinates = {
-
-    "France": { lat: 46.2276, lng: 2.2137 },
-    "United States": { lat: 37.0902, lng: -95.7129 },
-    "Nigeria": { lat: 9.0820, lng: 8.6753 },
-    "Senegal": { lat: 14.4974, lng: -14.4524 },
-    "Cote d'Ivoire": { lat: 7.5400, lng: -5.5471 },
-    "Mauritania": { lat: 21.0079, lng: -10.9408 },
-    "Togo": { lat: 8.6195, lng: 0.8248 },
-    "Mali": { lat: 17.5707, lng: -3.9962 },
-    "Morocco": { lat: 31.7917, lng: -7.0926 },
-    "Guinea": { lat: 9.9456, lng: -9.6966 },
-    "DR Congo": { lat: -4.0383, lng: 21.7587 },
-    "Cameroon": { lat: 7.3697, lng: 12.3547 },
-    "Rwanda": { lat: -1.9403, lng: 29.8739 },
-    "Burkina Faso": { lat: 12.2383, lng: -1.5616 },
-    "Guadeloupe": { lat: 16.2650, lng: -61.5510 },
-    "Central African Republic": { lat: 6.6111, lng: 20.9394 },
-    "Spain": { lat: 40.4637, lng: -3.7492 }
-
-  };
+}
 
 
-  function groupByOrigin(playerList) {
+/* =========================================================
+   CREATE GLOBE
+========================================================= */
 
-    const grouped = {};
+const world = Globe()(globeElement)
 
-    playerList.forEach(player => {
+  .backgroundColor("rgba(0,0,0,0)")
 
-      const origin = player.nationality;
+  .globeImageUrl(
+    "https://unpkg.com/three-globe/example/img/earth-dark.jpg"
+  )
 
-      const coords =
-        originCoordinates[origin] ||
-        { lat: 20, lng: 0 };
-
-      if (!grouped[origin]) {
-
-        grouped[origin] = {
-          country: origin,
-          lat: coords.lat,
-          lng: coords.lng,
-          players: []
-        };
-
-      }
-
-      grouped[origin].players.push(player);
-
-    });
-
-    return Object.values(grouped);
-
-  }
+  .bumpImageUrl(
+    "https://unpkg.com/three-globe/example/img/earth-topology.png"
+  );
 
 
-  /* =========================================================
-     CREATE GLOBE
-  ========================================================= */
+/* =========================================================
+   LARGE CLICKABLE HTML MARKERS
+========================================================= */
 
-  const world = Globe()(globeElement)
-
-    .backgroundColor("rgba(0,0,0,0)")
-
-    .globeImageUrl(
-      "https://unpkg.com/three-globe/example/img/earth-dark.jpg"
-    )
-
-    .bumpImageUrl(
-      "https://unpkg.com/three-globe/example/img/earth-topology.png"
-    );
-
-
-  /* =========================================================
-     LARGE CLICKABLE HTML MARKERS
-  ========================================================= */
-
- function markerElement(location) {
+function markerElement(location) {
 
   const wrapper = document.createElement("div");
 
@@ -3042,8 +2977,10 @@ document.addEventListener("DOMContentLoaded", () => {
   /* HOVER */
 
   wrapper.addEventListener("mouseenter", () => {
+
     pauseRotation();
     showPlayerCard(location);
+
   });
 
 
@@ -3072,58 +3009,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   return wrapper;
+
 }
 
-  /* =========================================================
-     PLAYER CARD
-  ========================================================= */
 
-  function showPlayerCard(location) {
+/* =========================================================
+   PLAYER CARD
+========================================================= */
 
-    if (!playerCard) return;
+function showPlayerCard(location) {
 
-    const playerList = location.players
-      .map(player => `
-        <div class="globe-card-player">
-          <strong>${player.name}</strong>
-          <span>${player.nationality}</span>
-        </div>
-      `)
-      .join("");
+  if (!playerCard) return;
 
-    playerCard.innerHTML = `
-
-      <button
-        type="button"
-        class="globe-card-close"
-        aria-label="Close"
-      >
-        ×
-      </button>
-
-      <strong class="globe-card-country">
-        ${location.country}
-      </strong>
-
-      <span class="globe-card-count">
-        ${location.players.length}
-        ${location.players.length === 1 ? "Player" : "Players"}
-      </span>
-
-      <div class="globe-card-list">
-        ${playerList}
+  const playerList = location.players
+    .map(player => `
+      <div class="globe-card-player">
+        <strong>${player.name}</strong>
+        <span>${player.club || "Club not listed"}</span>
       </div>
+    `)
+    .join("");
 
-    `;
+  playerCard.innerHTML = `
 
-    playerCard.hidden = false;
+    <button
+      type="button"
+      class="globe-card-close"
+      aria-label="Close player list"
+    >
+      ×
+    </button>
 
-    playerCard.style.left = "50%";
-    playerCard.style.top = "50%";
-    playerCard.style.transform = "translate(-50%, -50%)";
+    <strong class="globe-card-country">
+      ${location.country}
+    </strong>
 
-    const closeButton =
-      playerCard.querySelector(".globe-card-close");
+    <span class="globe-card-count">
+      ${location.players.length}
+      ${location.players.length === 1 ? "Player" : "Players"}
+    </span>
+
+    <div class="globe-card-list">
+      ${playerList}
+    </div>
+
+  `;
+
+  playerCard.hidden = false;
+
+  playerCard.style.left = "50%";
+  playerCard.style.top = "50%";
+  playerCard.style.transform = "translate(-50%, -50%)";
+
+  const closeButton =
+    playerCard.querySelector(".globe-card-close");
+
+  if (closeButton) {
 
     closeButton.addEventListener("click", () => {
 
@@ -3135,171 +3076,138 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
-
-  /* =========================================================
-     ROTATION CONTROL
-  ========================================================= */
-
-  let resumeTimer = null;
-
-  const controls = world.controls();
-
-  controls.autoRotate = true;
-  controls.autoRotateSpeed = 0.35;
-  controls.enableZoom = true;
+}
 
 
-  function pauseRotation() {
+/* =========================================================
+   ROTATION CONTROL
+========================================================= */
 
-    clearTimeout(resumeTimer);
+let resumeTimer = null;
 
-    controls.autoRotate = false;
+const controls = world.controls();
 
-  }
-
-
-  function scheduleRotationResume() {
-
-    clearTimeout(resumeTimer);
-
-    resumeTimer = setTimeout(() => {
-
-      if (!playerCard || playerCard.hidden) {
-        controls.autoRotate = true;
-      }
-
-    }, 1800);
-
-  }
+controls.autoRotate = true;
+controls.autoRotateSpeed = 0.35;
+controls.enableZoom = true;
 
 
-  globeElement.addEventListener("mouseenter", pauseRotation);
+function pauseRotation() {
 
-  globeElement.addEventListener("mouseleave", () => {
+  clearTimeout(resumeTimer);
+
+  controls.autoRotate = false;
+
+}
+
+
+function scheduleRotationResume() {
+
+  clearTimeout(resumeTimer);
+
+  resumeTimer = setTimeout(() => {
 
     if (!playerCard || playerCard.hidden) {
+
+      controls.autoRotate = true;
+
+    }
+
+  }, 1800);
+
+}
+
+
+globeElement.addEventListener(
+  "mouseenter",
+  pauseRotation
+);
+
+
+globeElement.addEventListener(
+  "mouseleave",
+  () => {
+
+    if (!playerCard || playerCard.hidden) {
+
       scheduleRotationResume();
-    }
-
-  });
-
-
-  /* =========================================================
-     DRAW DATA
-  ========================================================= */
-
-  function displayLocations(data) {
-
-    world
-
-      .htmlElementsData(data)
-
-      .htmlLat(d => d.lat)
-
-      .htmlLng(d => d.lng)
-
-      .htmlAltitude(0.035)
-
-      .htmlElement(markerElement);
-
-  }
-
-
-  let currentMode = "clubs";
-
-
-  function updateMode(mode) {
-
-    currentMode = mode;
-
-    if (playerCard) {
-      playerCard.hidden = true;
-    }
-
-    modeButtons.forEach(button => {
-
-      button.classList.toggle(
-        "active",
-        button.dataset.globeMode === mode
-      );
-
-    });
-
-    if (mode === "origins") {
-
-      displayLocations(
-        groupByOrigin(players)
-      );
-
-    } else {
-
-      displayLocations(
-        groupByCountry(players)
-      );
 
     }
 
   }
+);
 
 
-  modeButtons.forEach(button => {
+/* =========================================================
+   DRAW CLUB LOCATION DATA
+========================================================= */
 
-    button.addEventListener("click", () => {
+function displayLocations(data) {
 
-      updateMode(
-        button.dataset.globeMode
-      );
+  world
 
-    });
+    .htmlElementsData(data)
 
-  });
+    .htmlLat(location => location.lat)
 
+    .htmlLng(location => location.lng)
 
-  /* =========================================================
-     INITIAL CAMERA
-  ========================================================= */
+    .htmlAltitude(0.035)
 
-  world.pointOfView(
-    {
-      lat: 30,
-      lng: 10,
-      altitude: 2.15
-    },
-    1200
-  );
+    .htmlElement(markerElement);
+
+}
 
 
-  /* =========================================================
-     RESPONSIVE SIZE
-  ========================================================= */
+/* =========================================================
+   INITIAL CAMERA
+========================================================= */
 
-  function resizeGlobe() {
-
-    const width =
-      globeElement.clientWidth;
-
-    const height =
-      globeElement.clientHeight;
-
-    world.width(width);
-    world.height(height);
-
-  }
+world.pointOfView(
+  {
+    lat: 30,
+    lng: 10,
+    altitude: 2.15
+  },
+  1200
+);
 
 
-  resizeGlobe();
+/* =========================================================
+   RESPONSIVE SIZE
+========================================================= */
 
-  window.addEventListener(
-    "resize",
-    resizeGlobe
-  );
+function resizeGlobe() {
+
+  const width =
+    globeElement.clientWidth;
+
+  const height =
+    globeElement.clientHeight;
+
+  world.width(width);
+  world.height(height);
+
+}
 
 
-  /* =========================================================
-     INITIAL DATA
-  ========================================================= */
+resizeGlobe();
 
-  updateMode("clubs");
+
+window.addEventListener(
+  "resize",
+  resizeGlobe
+);
+
+
+/* =========================================================
+   INITIAL CLUB LOCATION DATA
+========================================================= */
+
+const clubLocations =
+  groupByCountry(players);
+
+displayLocations(clubLocations);
 
 });
 </script>
