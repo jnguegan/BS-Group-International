@@ -155,9 +155,9 @@
     "title": "United Kingdom",
     "text": "Liverpool"
   },
-  "isleOfMan": {
-    "title": "Isle of Man",
-    "text": "Douglas"
+ "morocco": {
+  "title": "Morocco",
+  "text": "Rabat"
   },
   "italy": {
     "title": "Italy",
@@ -454,9 +454,9 @@
     "title": "Royaume-Uni",
     "text": "Liverpool"
   },
-  "isleOfMan": {
-    "title": "Île de Man",
-    "text": "Douglas"
+  "morocco": {
+  "title": "Maroc",
+  "text": "Rabat"
   },
   "italy": {
     "title": "Italie",
@@ -754,9 +754,9 @@
     "title": "Reino Unido",
     "text": "Liverpool"
   },
-  "isleOfMan": {
-    "title": "Isla de Man",
-    "text": "Douglas"
+  "morocco": {
+  "title": "Marruecos",
+  "text": "Rabat"
   },
   "italy": {
     "title": "Italia",
