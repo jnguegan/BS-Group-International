@@ -1354,6 +1354,152 @@ experience
         bottom: 1.2rem;
       }
     }
+
+/* =========================
+   PLAYER VIDEO
+========================= */
+
+.player-video-btn {
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: 1px solid rgba(201, 162, 39, 0.7);
+  background: rgba(0, 0, 0, 0.35);
+  color: #d6b45a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.player-video-btn:hover {
+  background: #c9a227;
+  color: #050505;
+}
+
+.player-video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.player-video-modal.active {
+  display: flex;
+}
+
+.player-video-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.player-video-window {
+  position: relative;
+  z-index: 2;
+  width: min(92vw, 720px);
+  max-height: 92vh;
+  padding: 28px;
+  overflow-y: auto;
+
+  background:
+    radial-gradient(circle at top, rgba(201,162,39,.10), transparent 35%),
+    #080808;
+
+  border: 1px solid rgba(201,162,39,.35);
+  box-shadow:
+    0 30px 100px rgba(0,0,0,.8),
+    0 0 45px rgba(201,162,39,.08);
+}
+
+.player-video-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.player-video-heading small {
+  color: #c9a227;
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.player-video-heading h2 {
+  margin: 8px 0 5px;
+  color: #fff;
+  font-size: clamp(26px, 4vw, 42px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.player-video-heading p {
+  margin: 0;
+  color: rgba(255,255,255,.65);
+  font-size: 13px;
+}
+
+.player-video-window video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: min(60vh, 600px);
+  margin: 0 auto;
+  background: #000;
+  object-fit: contain;
+}
+
+.player-video-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  z-index: 5;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 50%;
+  background: rgba(0,0,0,.65);
+
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.player-video-close:hover {
+  border-color: #c9a227;
+  color: #c9a227;
+}
+
+@media (max-width: 600px) {
+
+  .player-video-modal {
+    padding: 10px;
+  }
+
+  .player-video-window {
+    width: 100%;
+    padding: 22px 12px 14px;
+  }
+
+  .player-video-window video {
+    width: 100%;
+    height: auto;
+    max-height: 72vh;
+  }
+
+  .player-video-heading {
+    padding: 0 35px;
+  }
+
+}
+    
+    
   </style>
 </head>
 
@@ -3244,5 +3390,64 @@ displayLocations(clubLocations);
 
 });
 </script>
+
+  <!-- NOBEL MENDY VIDEO MODAL -->
+<div id="nobel-mendy-video" class="player-video-modal">
+  <div class="player-video-backdrop"
+       onclick="closePlayerVideo('nobel-mendy-video')"></div>
+
+  <div class="player-video-window">
+
+    <button
+      class="player-video-close"
+      type="button"
+      onclick="closePlayerVideo('nobel-mendy-video')">
+      ×
+    </button>
+
+    <div class="player-video-heading">
+      <small>BS GROUP INTERNATIONAL</small>
+      <h2>Nobel Mendy</h2>
+      <p>Hull City · Centre-Back · Senegal International</p>
+    </div>
+
+    <video
+      controls
+      playsinline
+      preload="metadata">
+      <source
+        src="assets/videos/nobel-mendy-highlights.mp4"
+        type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+
+  </div>
+</div>
+
+<script>
+function openPlayerVideo(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePlayerVideo(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+
+  const video = modal.querySelector('video');
+
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+</script>
+  
 </body>
 </html>
