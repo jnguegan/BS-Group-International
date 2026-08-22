@@ -1496,6 +1496,14 @@ experience
   .player-video-heading {
     padding: 0 35px;
   }
+  .player-video-stream {
+  display: block;
+  width: min(100%, 340px);
+  aspect-ratio: 368 / 464;
+  margin: 0 auto;
+  border: 0;
+  background: #000;
+}
 
 }
     
@@ -3411,16 +3419,14 @@ displayLocations(clubLocations);
       <p>Hull City · Centre-Back · Senegal International</p>
     </div>
 
-    <video
-      controls
-      playsinline
-      preload="metadata">
-      <source
-        src="assets/videos/nobel-mendy-highlights.mp4"
-        type="video/mp4">
-      Your browser does not support video playback.
-    </video>
-
+   <iframe
+  src="https://customer-ibh6f4cbm2esznnk.cloudflarestream.com/7ffb2c0556c3d87f764e13971dfb468d/iframe"
+  class="player-video-stream"
+  title="Nobel Mendy Highlights"
+  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+  allowfullscreen>
+</iframe>
+    
   </div>
 </div>
 
