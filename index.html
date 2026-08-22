@@ -3450,10 +3450,17 @@ function closePlayerVideo(id) {
     video.currentTime = 0;
   }
 
+  const iframe = modal.querySelector('iframe');
+
+  if (iframe) {
+    const currentSrc = iframe.src;
+    iframe.src = '';
+    iframe.src = currentSrc;
+  }
+
   modal.classList.remove('active');
   document.body.style.overflow = '';
-}
-</script>
+}</script>
   
 </body>
 </html>
