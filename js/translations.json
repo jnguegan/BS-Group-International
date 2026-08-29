@@ -111,13 +111,13 @@
     "league": "Bundesliga · Germany",
     "international": "DR Congo International"
   },
-  "khalilFayad": {
-    "name": "Khalil Fayad",
-    "position": "Central Midfield",
-    "club": "Montpellier HSC",
-    "league": "Ligue 2 · France",
-    "international": ""
-  }
+  "sikouNiakate": {
+  "position": "Centre-Back",
+  "name": "Sikou Niakaté",
+  "club": "SC Braga",
+  "league": "Liga Portugal Betclic · Portugal",
+  "international": "MALI NATIONAL TEAM"
+}
 }  
     
     },
@@ -410,13 +410,13 @@
     "league": "Bundesliga · Allemagne",
     "international": "International congolais (RDC)"
   },
-  "khalilFayad": {
-    "name": "Khalil Fayad",
-    "position": "Milieu central",
-    "club": "Montpellier HSC",
-    "league": "Ligue 2 · France",
-    "international": ""
-  }
+  "sikouNiakate": {
+  "position": "Défenseur central",
+  "name": "Sikou Niakaté",
+  "club": "SC Braga",
+  "league": "Liga Portugal Betclic · Portugal",
+  "international": "ÉQUIPE NATIONALE DU MALI"
+}
 }
     },
 
@@ -709,13 +709,13 @@
     "league": "Bundesliga · Alemania",
     "international": "Internacional con RD del Congo"
   },
-  "khalilFayad": {
-    "name": "Khalil Fayad",
-    "position": "Centrocampista",
-    "club": "Montpellier HSC",
-    "league": "Ligue 2 · Francia",
-    "international": ""
-  }
+  "sikouNiakate": {
+  "position": "Defensa central",
+  "name": "Sikou Niakaté",
+  "club": "SC Braga",
+  "league": "Liga Portugal Betclic · Portugal",
+  "international": "SELECCIÓN NACIONAL DE MALI"
+}
 }
     
     },
